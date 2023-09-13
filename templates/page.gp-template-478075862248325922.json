@@ -1,0 +1,55 @@
+{
+  "layout": "theme.gempages.footer",
+  "sections": {
+    "gp_section_478080103578862370": {
+      "type": "gp-section-478080103578862370",
+      "settings": {
+      }
+    },
+    "gp_section_478080104853930786": {
+      "type": "gp-section-478080104853930786",
+      "settings": {
+      }
+    },
+    "gp_section_478080103763411746": {
+      "type": "gp-section-478080103763411746",
+      "settings": {
+      }
+    },
+    "gp_section_478080104300282658": {
+      "type": "gp-section-478080104300282658",
+      "settings": {
+      }
+    },
+    "gp_section_478080104988148986": {
+      "type": "gp-section-478080104988148986",
+      "settings": {
+      }
+    },
+    "gp_section_478080103595639586": {
+      "type": "gp-section-478080103595639586",
+      "settings": {
+      }
+    },
+    "gp_section_478080103713080570": {
+      "type": "gp-section-478080103713080570",
+      "settings": {
+      }
+    },
+    "gp_section_478080103595640058": {
+      "type": "gp-section-478080103595640058",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "gp_section_478080103578862370",
+    "gp_section_478080104853930786",
+    "gp_section_478080103763411746",
+    "gp_section_478080104300282658",
+    "gp_section_478080104988148986",
+    "gp_section_478080103595639586",
+    "gp_section_478080103713080570",
+    "gp_section_478080103595640058"
+  ]
+}
