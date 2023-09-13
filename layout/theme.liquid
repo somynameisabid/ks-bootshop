@@ -64,6 +64,7 @@
     <script src="{{ 'cart.js' | asset_url }}" defer></script>
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
 
+{% render 'gp-head' %}
 </head>
 
 <body class="{{ request.page_type | prepend: 'page-type-' }}">
@@ -89,6 +90,7 @@
         render 'offcanvas-cart'
         render 'offcanvas-search'
     %}
+{% include 'cjpod' %}
 </body>
 </html>
     
