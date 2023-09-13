@@ -8,14 +8,14 @@
           "settings": {
             "img_mobile_height": 500,
             "img_mobile_opacity": 0.7,
-            "img_desktop": "shopify:\/\/shop_images\/image_1.png",
+            "img_desktop": "shopify:\/\/shop_images\/Neutral_Modern_Discount_Promotion_Fashion_Facebook_Ad.png",
             "img_desktop_height": 510,
-            "img_desktop_opacity": 0.7,
-            "title": "Achieve a Brighter Smile Today",
-            "title_size": "h2",
-            "description": "<p>Our Natural Teeth Whitening Kit for a Brighter You<\/p>",
-            "description_size": "fs-5",
-            "btn_text": "Shop Now",
+            "img_desktop_opacity": 1,
+            "title": "",
+            "title_size": "h1",
+            "description": "",
+            "description_size": "fs-1",
+            "btn_text": "Get it Now",
             "btn_url": "https:\/\/www.kondasoft.com\/products\/ks-bootshop",
             "btn_color": "btn-primary",
             "btn_size": ""
@@ -88,6 +88,32 @@
         "btn_url": "shopify:\/\/collections\/all",
         "btn_color": "btn-primary",
         "pt": 13,
+        "pb": 11,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "1651754599ab801902": {
+      "type": "image-with-text",
+      "settings": {
+        "bg_color": "bg-light text-body",
+        "text_align": "text-start",
+        "image": "shopify:\/\/shop_images\/1612330604769-removebg-upscaled.png",
+        "img_orientation": "landscape-x2",
+        "img_crop": "center",
+        "img_border": "img-thumbnail",
+        "img_align_desktop": "flex-lg-row",
+        "title": "Teeth Whitening Kit",
+        "title_size": "h2",
+        "subtitle": "Bamboo Charcoal",
+        "subtitle_size": "fs-6",
+        "description": "<p>Our Natural Teeth Whitening Kit offers unbeatable gum protection, tooth repair, plaque and calculus reduction. Plus, it relieves your gums and refreshes your breath.<\/p>",
+        "description_size": "fs-6",
+        "btn_text": "Learn more",
+        "btn_url": "shopify:\/\/pages\/bamboo-charcoal-toothbrush-landing-page",
+        "btn_color": "btn-primary",
+        "btn_size": "",
+        "pt": 11,
         "pb": 11,
         "mt": 0,
         "mb": 0
@@ -215,31 +241,6 @@
         "mb": 0
       }
     },
-    "1651754599ab801902": {
-      "type": "image-with-text",
-      "settings": {
-        "bg_color": "bg-light text-body",
-        "text_align": "text-start",
-        "img_orientation": "landscape-x2",
-        "img_crop": "center",
-        "img_border": "img-thumbnail",
-        "img_align_desktop": "flex-lg-row",
-        "title": "Image With Text",
-        "title_size": "h2",
-        "subtitle": "Some Optional Subtitle",
-        "subtitle_size": "fs-6",
-        "description": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "description_size": "fs-6",
-        "btn_text": "Learn more",
-        "btn_url": "#",
-        "btn_color": "btn-primary",
-        "btn_size": "",
-        "pt": 11,
-        "pb": 11,
-        "mt": 0,
-        "mb": 0
-      }
-    },
     "16517348541d37c171": {
       "type": "separator",
       "settings": {
@@ -270,9 +271,9 @@
   "order": [
     "carousel",
     "165151877352b831f8",
+    "1651754599ab801902",
     "1651733459a1bea1c2",
     "e1be4fa4-9c32-4ed7-8195-ce66689d1e28",
-    "1651754599ab801902",
     "16517348541d37c171",
     "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
   ]
