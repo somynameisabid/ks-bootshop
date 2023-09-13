@@ -27,7 +27,7 @@
             "img_mobile_height": 500,
             "img_mobile_opacity": 0.7,
             "img_desktop": "shopify:\/\/shop_images\/3460260676399.jpg",
-            "img_desktop_height": 420,
+            "img_desktop_height": 510,
             "img_desktop_opacity": 0.7,
             "title": "Simple to Use, Easy to Customize",
             "title_size": "h2",
@@ -84,9 +84,9 @@
         "breakpoint_xl": 4,
         "breakpoint_xxl": 4,
         "btn_show": true,
-        "btn_text": "View more products »",
+        "btn_text": "View All",
         "btn_url": "shopify:\/\/collections\/all",
-        "btn_color": "btn-outline-secondary",
+        "btn_color": "btn-primary",
         "pt": 10,
         "pb": 11,
         "mt": 0,
@@ -134,7 +134,7 @@
         "e86d0893-60ca-4bbf-aa40-c1ea7de37bec": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "bamboo-toothbrushes",
             "title": ""
           }
         }
@@ -166,6 +166,51 @@
         "breakpoint_xxl": 3,
         "pt": 10,
         "pb": 11,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "e1be4fa4-9c32-4ed7-8195-ce66689d1e28": {
+      "type": "featured-collections",
+      "blocks": {
+        "73f7c02b-b504-4920-a53c-6b5f89a72aa4": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "787614dd-a6af-47cd-a897-ddf49f9d46c2": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "73f7c02b-b504-4920-a53c-6b5f89a72aa4",
+        "787614dd-a6af-47cd-a897-ddf49f9d46c2"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_align": "text-center",
+        "title": "",
+        "title_size": "h6",
+        "description": "",
+        "description_size": "fs-6",
+        "collection_img_orientation": "square",
+        "collection_img_border": "",
+        "btn_text": "",
+        "btn_color": "btn-primary",
+        "breakpoint_xs": 2,
+        "breakpoint_sm": 2,
+        "breakpoint_md": 2,
+        "breakpoint_lg": 2,
+        "breakpoint_xl": 2,
+        "breakpoint_xxl": 2,
+        "pt": 0,
+        "pb": 0,
         "mt": 0,
         "mb": 0
       }
@@ -226,6 +271,7 @@
     "carousel",
     "165151877352b831f8",
     "1651733459a1bea1c2",
+    "e1be4fa4-9c32-4ed7-8195-ce66689d1e28",
     "1651754599ab801902",
     "16517348541d37c171",
     "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
