@@ -6,7 +6,7 @@
         "7c7200c0-9e25-4d6f-8e80-68098f92561e": {
           "type": "slide",
           "settings": {
-            "img_mobile_height": 500,
+            "img_mobile_height": 510,
             "img_mobile_opacity": 0.7,
             "img_desktop": "shopify:\/\/shop_images\/Neutral_Modern_Discount_Promotion_Fashion_Facebook_Ad.png",
             "img_desktop_height": 510,
@@ -24,19 +24,19 @@
         "45eefe8d-75a6-4c0d-83c1-bf904392cb96": {
           "type": "slide",
           "settings": {
-            "img_mobile_height": 500,
+            "img_mobile_height": 510,
             "img_mobile_opacity": 0.7,
-            "img_desktop": "shopify:\/\/shop_images\/3460260676399.jpg",
+            "img_desktop": "shopify:\/\/shop_images\/Black_and_White_Modern_Minimalist_Simple_Fashion_New_Arrivals_Facebook_Ad.png",
             "img_desktop_height": 510,
-            "img_desktop_opacity": 0.7,
-            "title": "Simple to Use, Easy to Customize",
+            "img_desktop_opacity": 1,
+            "title": "",
             "title_size": "h2",
-            "description": "<p>Free Shopify Theme powered by Bootstrap v5 framework<\/p>",
+            "description": "",
             "description_size": "fs-5",
-            "btn_text": "Download Free",
-            "btn_url": "https:\/\/www.kondasoft.com",
-            "btn_color": "btn-primary",
-            "btn_size": ""
+            "btn_text": "Shop Now",
+            "btn_url": "shopify:\/\/collections\/frontpage",
+            "btn_color": "btn-secondary",
+            "btn_size": "btn-lg"
           }
         }
       },
