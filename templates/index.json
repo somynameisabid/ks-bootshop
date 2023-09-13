@@ -6,6 +6,7 @@
         "7c7200c0-9e25-4d6f-8e80-68098f92561e": {
           "type": "slide",
           "settings": {
+            "img_mobile": "shopify:\/\/shop_images\/New_Project_2.png",
             "img_mobile_height": 510,
             "img_mobile_opacity": 0.7,
             "img_desktop": "shopify:\/\/shop_images\/Neutral_Modern_Discount_Promotion_Fashion_Facebook_Ad.png",
