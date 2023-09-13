@@ -202,7 +202,7 @@
         "73f7c02b-b504-4920-a53c-6b5f89a72aa4": {
           "type": "collection",
           "settings": {
-            "collection": "frontpage",
+            "collection": "essential-oils",
             "title": ""
           }
         },
@@ -249,23 +249,6 @@
         "mt": 0,
         "mb": 0
       }
-    },
-    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b": {
-      "type": "html",
-      "settings": {
-        "html": "<blockquote class=\"twitter-tweet\">\n<p lang=\"en\" dir=\"ltr\">Raw Milk is nutritiously superior to pasteurized milk.<br><br>It has enzymes, nutrients, and vitamins that are not present in pasteurized milk and it is one of the easiest foods to digest. <a href=\"https:\/\/t.co\/ylr3TG4tj5\">pic.twitter.com\/ylr3TG4tj5<\/a><\/p>— GreenLifeJoy (@GreenLifeJoy) <a href=\"https:\/\/twitter.com\/GreenLifeJoy\/status\/1701958928383279347?ref_src=twsrc%5Etfw\">September 13, 2023<\/a>\n<\/blockquote> <script async=\"\" src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"><\/script>",
-        "bg_color": "",
-        "container": "",
-        "text_align": "text-center",
-        "title": "HTML Section",
-        "title_size": "h2",
-        "description": "<p>Display any HTML codes in this section like embed maps, videos, etc.<\/p>",
-        "description_size": "fs-6",
-        "pt": 11,
-        "pb": 0,
-        "mt": 0,
-        "mb": 0
-      }
     }
   },
   "order": [
@@ -274,7 +257,6 @@
     "1651754599ab801902",
     "1651733459a1bea1c2",
     "e1be4fa4-9c32-4ed7-8195-ce66689d1e28",
-    "16517348541d37c171",
-    "1ab6c22f-7e79-4e79-b4b5-e0939ba5593b"
+    "16517348541d37c171"
   ]
 }

@@ -130,9 +130,9 @@
         "settings": {
           "bg_color": "bg-light text-dark",
           "max_width": "560",
-          "title": "Newsletter Subscribe",
+          "title": "Subscribe to Our Newsletter",
           "title_size": "h3",
-          "description": "<p>Subscribe to get updates about our latest offers and other important stuff. We usually send once per week.<\/p>",
+          "description": "<p>Subscribe to get updates about our latest offers and other important stuff. <\/p>",
           "description_size": "fs-6",
           "input_group_size": "",
           "btn_color": "btn-primary",
