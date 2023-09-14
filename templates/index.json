@@ -3,7 +3,7 @@
     "7d156caa-7d88-4bed-afea-425806769175": {
       "type": "html",
       "settings": {
-        "html": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your Shopify Website<\/title>\n    <!-- Include your CSS stylesheet if necessary -->\n    <link rel=\"stylesheet\" href=\"styles.css\">\n\n\n    <header>\n        <!-- Your website header content goes here -->\n    <\/header>\n\n    <!-- Hero Section -->\n    <section class=\"hero\">\n        <a href=\"\/collections\/frontpage\" class=\"hero-link\">\n            <img src=\"\/cdn\/shop\/files\/New_Project_1.png\" alt=\"Hero Image\">\n        <\/a>\n    <\/section>\n\n    <!-- Main Content and other sections go here -->\n\n    <footer>\n        <!-- Your website footer content goes here -->\n    <\/footer>",
+        "html": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your Shopify Website<\/title>\n    <!-- Include your CSS stylesheet if necessary -->\n    <link rel=\"stylesheet\" href=\"styles.css\">\n\n\n    <header>\n        <!-- Your website header content goes here -->\n    <\/header>\n\n    <!-- Hero Section -->\n    <section class=\"hero\">\n        <a href=\"\/collections\/frontpage\" class=\"hero-link\">\n            <img src=\"\/cdn\/shop\/files\/Black_and_White_Modern_Minimalist_Simple_Fashion_New_Arrivals_Facebook_Ad.png\" alt=\"Hero Image\">\n        <\/a>\n    <\/section>\n\n    <!-- Main Content and other sections go here -->\n\n    <footer>\n        <!-- Your website footer content goes here -->\n    <\/footer>",
         "bg_color": "",
         "container": "container",
         "text_align": "text-center",
