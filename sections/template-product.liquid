@@ -1,209 +1,284 @@
-{% comment %}
-Template used sitewide for each time a product is displayed.
-This template handles the product/variant images, showing product information and variants.
-At the bottom of the html is a script that dynamically show price and updates the selected variant ID.
-The script for adding the product to the cart is in scripts.js.
-{% endcomment %}
+{% liquid
+    assign pt = section.settings.pt | prepend: 'pt-5 pt-sm-'
+    assign pb = section.settings.pb | prepend: 'pb-'
 
-<div class="trago_row">
-  
-  <!-- Variant Images -->
+    assign current_variant = product.selected_or_first_available_variant
+%}
 
-  <div class="column_1_2">
-    
-    <div class="flexslider product_slider">
-      <ul class="slides">
-        {% for image in product.images %}
-          <li data-image-id="{{ image.id }}" data-thumb="{{ image | product_img_url: 'medium' }}">
-              <img src="{{ image | product_img_url: 'original' }}" data-image-id="{{ image.id }}" />
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+<a class="visually-hidden-focusable" href="#product-content">
+    {{ 'general.accessibility.skip_product_content' | t }}
+</a>
 
-  </div>
-
-  <!-- Product Information -->
-
-  <div class="column_1_2">
-    <form id="product_form">
-
-      <!-- Title / Description -->
-
-      <div class="product_information_header">
-        <h3>{{ product.title }}</h3>
-        {% unless product.type == blank %}
-          <h3 class="font_medium">{{ product.type }}</h3>
-        {% endunless %}
-        {% unless product.description == blank %}
-          <p>{{ product.description }}</p>
-        {% endunless %}
-      </div>
-
-      <!-- Variants -->
-
-      {% if product.variants.size > 1 %}
-        {% if product.options[0] %}
-
-          <div class="product_variant_container">
-
-            {% if product.options[0] == 'Color' %}
-
-              <div class="trago_color_variants">
-                <label for="color"><h3 class="font_medium">{{ product.options[0] }}</h3></label>
-                {% assign used = '' %}
-                {% for variant in product.variants %}
-                  {% unless used contains variant.option1 %}
-                    <input type="radio" name="color" {% if forloop.first %}checked="checked"{% endif %} value="{{ variant.option1 }}" data-id="{{ variant.id }}" onclick="updateProductInformation()" style="background: {{ variant.metafields.c_f.hex_code }}">
-                    {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
-                  {% endunless %}
-                {% endfor %}
-              </div>
-
-            {% else %}
-              
-              {% assign used = '' %}
-              <label for="select_one"><h3 class="font_medium">{{ product.options[0] }}</h3></label>
-              <div class="trago_select_container">
-                <select id='select_one' onchange="updateProductInformation()">
-                  {% for variant in product.variants %}
-                    {% unless used contains variant.option1 %}
-                      <option value="{{ variant.option1 }}">{{ variant.option1 }}</option>
-                      {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
-                    {% endunless %}
-                  {% endfor %}
-                </select>
-              </div>
-            
-            {% endif %}
-          
-          </div>
-
-        {% endif %}
-
-        {% if product.options[1] %}
-
-          <div class="product_variant_container">
-            {% assign used = '' %}
-            <label for="select_two"><h3 class="font_medium">{{ product.options[1] }}</h3></label>
-            <div class="trago_select_container">
-              <select id='select_two' onchange="updateProductInformation()">
-                {% for variant in product.variants %}
-                  {% unless used contains variant.option2 %}
-                    <option value="{{ variant.option2 }}">{{ variant.option2 }}</option>
-                    {% capture used %}{{ used }} {{ variant.option2 }}{% endcapture %}
-                  {% endunless %}
-                {% endfor %}
-              </select>
+<section 
+    id="product-template" 
+    class="{{ pt }} {{ pb }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                {% render 'product-gallery' %}
             </div>
-          </div>
+            <div class="col-lg-6">
+                <div id="product-content">
+                    {% if section.settings.show_vendor and product.vendor %}
+                        <p class="product-vendor text-muted my-1 text-uppercase">
+                            {{ product.vendor }}
+                        </p>
+                    {% endif %}
+                    <h1 class="title mb-3 {{ section.settings.title_size }}">
+                        {{ product.title }}
+                    </h1>
+                    <p class="product-price fs-4 mb-5">
+                        {% if current_variant.compare_at_price > current_variant.price %}
+                            <span class="product-price-compare text-muted me-3">
+                                <span class="visually-hidden">
+                                    {{ 'product.price_regular' | t }} &nbsp;
+                                </span>
+                                <s>{{ current_variant.compare_at_price | money }}</s>
+                            </span>
+                            <span class="product-price-final">
+                                <span class="visually-hidden">
+                                    {{ 'product.price_sale' | t }} &nbsp;
+                                </span>
+                                {{ current_variant.price | money }}
+                            </span>
+                        {% else %}
+                            <span class="product-price-final">
+                                {{ current_variant.price | money }}
+                            </span>
+                        {% endif %}
+                        {% if current_variant.available and current_variant.compare_at_price > current_variant.price %}
+                            <span class="price-badge-sale badge">
+                                {{ 'product.save' | t }} {{ current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price | round | append: '%' }}
+                            </span>    
+                        {% endif %}
+                        {% unless current_variant.available %}
+                            <span class="price-badge-sold-out badge">
+                                {{ 'product.sold_out' | t }}
+                            </span>        
+                        {% endunless %}
+                    </p>
+                    {% render 'product-form' %}
+                    {% render 'product-accordion' %}
 
-        {% endif %}
-        
-        {% if product.options[2] %}
-          <div class="product_variant_container">
-            {% assign used = '' %}
-            <label for="select_three"><h3 class="font_medium">{{ product.options[2] }}</h3></label>
-            <div class="trago_select_container">
-              <select id='select_three' onchange="updateProductInformation()">
-                {% for variant in product.variants %}
-                  {% unless used contains variant.option3 %}
-                    <option value="{{ variant.option2 }}">{{ variant.option3}}</option>
-                    {% capture used %}{{ used }} {{ variant.option3 }}{% endcapture %}
-                  {% endunless %}
-                {% endfor %}
-              </select>
+                    {% if section.settings.show_share_btn %}
+                        <div class="text-end">
+                            {% render 'share-button', title: product.title, url: product.url %}
+                        </div>
+                    {% endif %}
+                </div>
             </div>
-          </div>
-        {% endif %}
-      
-      {% endif %}
-
-      <!-- Quantity -->
-
-      <div class="product_variant_container">
-        <label for="quantity"><h3 class="font_medium">Quantity</h3></label>
-        <div class="quantity_input_container">
-          <input min="1" type="number" id="quantity" name="quantity" onchange="updateProductInformation()" value="1" />
-          <div class="quantity_controls">
-            <div class="quantity_arrow quantity_up">▲</div>
-            <div class="quantity_arrow quantity_down">▼</div>
-          </div>
         </div>
-      </div>
-      
-      <!-- Price -->
+    </div>
+</section>
 
-      <h2 class="text_blue font_medium product_price" id="product_price">{{ product.selected_or_first_available_variant.price | money }}</h2>
-      
-      <!-- Add To Cart -->
-      
-      <input type="submit" name="add" id="add_to_cart" data-variant-id="{{ product.variants.first.id }}" class="trago_button blue" value="Add To Cart">
+{%- liquid
+    if product.selected_or_first_available_variant.featured_media
+        assign seo_media = product.selected_or_first_available_variant.featured_media
+    else
+        assign seo_media = product.featured_media
+    endif
+-%}
 
-      <!-- Ajax Message -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": {{ product.title | json }},
+    "url": {{ request.origin | append: product.url | json }},
+    {% if seo_media -%}
+        "image": [
+            {{ seo_media | image_url: width: seo_media.preview_image.width | prepend: "https:" | json }}
+        ],
+    {%- endif %}
+    "description": {{ product.description | strip_html | json }},
+    {% if product.selected_or_first_available_variant.sku != blank -%}
+        "sku": {{ product.selected_or_first_available_variant.sku | json }},
+    {%- endif %}
+    "brand": {
+        "@type": "Brand",
+        "name": {{ product.vendor | json }}
+    },
+    "offers": [
+        {%- for variant in product.variants -%}
+            {
+            "@type" : "Offer",
+            {%- if variant.sku != blank -%}
+                "sku": {{ variant.sku | json }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 12 -%}
+                "gtin12": {{ variant.barcode }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 13 -%}
+                "gtin13": {{ variant.barcode }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 14 -%}
+                "gtin14": {{ variant.barcode }},
+            {%- endif -%}
+            "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+            "price" : {{ variant.price | divided_by: 100.00 | json }},
+            "priceCurrency" : {{ cart.currency.iso_code | json }},
+            "url" : {{ request.origin | append: variant.url | json }}
+            }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+    ]
+}
+</script>
 
-      <p class="ajax_message"></p>
-
-    </form>
-
-  </div>
-
-</div>
-
-<script>
-  
-  // Function to get the value of the checked radio button in the form.
-  function getRadioVal(form, name) {
-      var val;
-      var radios = form.elements[name];
-      
-      for (var i=0, len=radios.length; i<len; i++) {
-          if ( radios[i].checked ) {
-              val = radios[i].value; 
-              break;
-          }
-      }
-      return val;
-  }
-  // Function runs every time a variant radio button or select dropdown changes.
-  function updateProductInformation() {
-    // Save the option select values
-    {% if product.options[0] %}
-      {% if product.options[0] == 'Color' %}
-        var opt1 = getRadioVal( document.getElementById('product_form'), 'color' );
-      {% else %}
-        var opt1 = document.getElementById('select_one').value;
-      {% endif %}
-    {% endif %}
-    {% if product.options[1] %}
-      var opt2 = document.getElementById('select_two').value;
-    {% endif %}
-    {% if product.options[2] %}
-      var opt3 = document.getElementById('select_three').value;
-    {% endif %}
-    // Capture the quantity and save it as a liquid variable
-    var quantity = document.getElementById('quantity').value;
-    {% capture quantity %}quantity{% endcapture %}
-    var id = '';
-    // Loop through all of the variants to check if the option values match any of the variant combinations
-    {% for v in product.variants %}
-      if(opt1=="{{ v.option1 }}"{% if product.options[1] %} && opt2=="{{ v.option2 }}"{% endif %}{% if product.options[2] %} && opt3=="{{ v.option3 }}"{% endif %}) {
-        // Save the ID for the specific variant combination.
-        var id = {{ v.id }};
-        // Save the price given the quantity the user has selected. Once multiplied then format the price using the js api.
-        var fullPrice = {{ quantity }} * {{ v.price }};
-        var formattedPrice = Shopify.formatMoney(fullPrice, "{{ shop.money_format }}" );
-      }
-    {% endfor %}
-    // URL Query String
-    console.log(window.location.search);
-    // If variant has an id then set the cart to the selected variant and change the price field.
-    if(id!='') {
-      document.getElementById('add_to_cart').setAttribute('data-variant-id', id);
-      document.getElementById('product_price').innerHTML = formattedPrice;
-    } else {
-      document.getElementById('add_to_cart').setAttribute('data-variant-id', id);
-      document.getElementById('product_price').innerHTML = 'Unavailable';
-    }
-  }
-</script> 
+{% schema %}
+{
+    "name": "Product (template)",
+    "settings": [
+        {
+            "type": "header",
+            "content": "General"
+        },
+        {
+            "type": "select",
+            "id": "title_size",
+            "label": "Title Size",
+            "default": "h2",
+            "options": [
+                { "group": "Heading", "value": "h1", "label": "H1" },
+                { "group": "Heading", "value": "h2", "label": "H2" },
+                { "group": "Heading", "value": "h3", "label": "H3" },
+                { "group": "Heading", "value": "h4", "label": "H4" },
+                { "group": "Heading", "value": "h5", "label": "H5" },
+                { "group": "Heading", "value": "h6", "label": "H6" }
+            ]
+        },
+        {
+            "type": "checkbox",
+            "id": "show_vendor",
+            "label": "Show vendor",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "show_share_btn",
+            "label": "Show Share button",
+            "default": true
+        },
+        {
+            "type": "header",
+            "content": "Gallery"
+        },
+        {
+            "type": "select",
+            "id": "gallery_img_orientation",
+            "label": "Image orientation",
+            "default": "square",
+            "options": [
+                { "value": "square", "label": "Square" },
+                { "value": "landscape", "label": "Landscape" },
+                { "value": "potrait", "label": "Potrait" }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "gallery_img_border",
+            "label": "Image border",
+            "default": "img-thumbnail",
+            "options": [
+                { "value": "", "label": "Square" },
+                { "value": "rounded", "label": "Rounded" },
+                { "value": "img-thumbnail", "label": "Thumbnail" }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Form"
+        },
+        {
+            "type": "checkbox",
+            "id": "form_light_bg",
+            "label": "Light bg color",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "form_show_buy_btn",
+            "label": "Show Buy button",
+            "default": true
+        },
+        {
+            "type": "header",
+            "content": "Spacing"
+        },
+        {
+            "type": "range",
+            "id": "pt",
+            "label": "Padding top",
+            "min": 0,
+            "max": 20,
+            "step": 1,
+            "default": 10
+        },
+        {
+            "type": "range",
+            "id": "pb",
+            "label": "Padding bottom",
+            "min": 0,
+            "max": 20,
+            "step": 1,
+            "default": 10
+        },
+        {
+            "type": "range",
+            "id": "mt",
+            "label": "Margin top",
+            "min": 0,
+            "max": 20,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "mb",
+            "label": "Margin bottom",
+            "min": 0,
+            "max": 20,
+            "step": 1,
+            "default": 0
+        }
+    ],
+    "blocks": [
+        {
+            "type": "product_description",
+            "name": "Product description",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Details"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "name": "Richtext",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Rich text"
+                },
+                {
+                    "type": "richtext",
+                    "id": "description",
+                    "label": "Description"
+                }
+            ]
+        }
+    ],
+    "templates": ["product"],
+    "presets": [
+        {
+            "name": "Product (template)",
+            "category": "Product page"
+        }
+    ]
+}
+{% endschema %}
