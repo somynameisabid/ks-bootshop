@@ -1,5 +1,22 @@
 {
   "sections": {
+    "7d156caa-7d88-4bed-afea-425806769175": {
+      "type": "html",
+      "settings": {
+        "html": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your Shopify Website<\/title>\n    <!-- Include your CSS stylesheet if necessary -->\n    <link rel=\"stylesheet\" href=\"styles.css\">\n\n\n    <header>\n        <!-- Your website header content goes here -->\n    <\/header>\n\n    <!-- Hero Section -->\n    <section class=\"hero\">\n        <a href=\"\/collections\/frontpage\" class=\"hero-link\">\n            <img src=\"\/cdn\/shop\/files\/New_Project_1.png\" alt=\"Hero Image\">\n        <\/a>\n    <\/section>\n\n    <!-- Main Content and other sections go here -->\n\n    <footer>\n        <!-- Your website footer content goes here -->\n    <\/footer>",
+        "bg_color": "",
+        "container": "container",
+        "text_align": "text-center",
+        "title": "",
+        "title_size": "h6",
+        "description": "",
+        "description_size": "fs-6",
+        "pt": 0,
+        "pb": 0,
+        "mt": 0,
+        "mb": 0
+      }
+    },
     "carousel": {
       "type": "carousel",
       "blocks": {
@@ -233,6 +250,7 @@
     }
   },
   "order": [
+    "7d156caa-7d88-4bed-afea-425806769175",
     "carousel",
     "165151877352b831f8",
     "1651754599ab801902",
