@@ -19,29 +19,6 @@
     },
     "carousel": {
       "type": "carousel",
-      "blocks": {
-        "45eefe8d-75a6-4c0d-83c1-bf904392cb96": {
-          "type": "slide",
-          "settings": {
-            "img_mobile_height": 630,
-            "img_mobile_opacity": 0.7,
-            "img_desktop": "shopify:\/\/shop_images\/Black_and_White_Modern_Minimalist_Simple_Fashion_New_Arrivals_Facebook_Ad.png",
-            "img_desktop_height": 510,
-            "img_desktop_opacity": 1,
-            "title": "",
-            "title_size": "h2",
-            "description": "",
-            "description_size": "fs-5",
-            "btn_text": "Shop Now",
-            "btn_url": "shopify:\/\/collections\/frontpage",
-            "btn_color": "btn-secondary",
-            "btn_size": "btn-lg"
-          }
-        }
-      },
-      "block_order": [
-        "45eefe8d-75a6-4c0d-83c1-bf904392cb96"
-      ],
       "custom_css": [
 
       ],

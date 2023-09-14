@@ -36,7 +36,7 @@
         "type": "navbar",
         "settings": {
           "bg_color": "bg-white text-dark",
-          "shadow": "shadow-sm",
+          "shadow": "shadow-none",
           "menu_desktop": "",
           "logo_height_mobile": 40,
           "logo_height_desktop": 40,
