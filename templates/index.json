@@ -3,24 +3,6 @@
     "carousel": {
       "type": "carousel",
       "blocks": {
-        "7c7200c0-9e25-4d6f-8e80-68098f92561e": {
-          "type": "slide",
-          "settings": {
-            "img_mobile_height": 630,
-            "img_mobile_opacity": 1,
-            "img_desktop": "shopify:\/\/shop_images\/New_Project_4.png",
-            "img_desktop_height": 630,
-            "img_desktop_opacity": 1,
-            "title": "",
-            "title_size": "h1",
-            "description": "",
-            "description_size": "fs-1",
-            "btn_text": "Get it Now",
-            "btn_url": "https:\/\/www.kondasoft.com\/products\/ks-bootshop",
-            "btn_color": "btn-primary",
-            "btn_size": ""
-          }
-        },
         "45eefe8d-75a6-4c0d-83c1-bf904392cb96": {
           "type": "slide",
           "settings": {
@@ -41,7 +23,6 @@
         }
       },
       "block_order": [
-        "7c7200c0-9e25-4d6f-8e80-68098f92561e",
         "45eefe8d-75a6-4c0d-83c1-bf904392cb96"
       ],
       "custom_css": [
