@@ -3,7 +3,7 @@
     "5478aba4-45e1-46c4-a977-a2cbaf7e6c39": {
       "type": "html",
       "settings": {
-        "html": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Text Carousel<\/title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n\n\n    <div class=\"carousel\">\n        <!-- Slide 1 -->\n        <div class=\"slide\">10% OFF With Code Charcoal<\/div>\n\n        <!-- Slide 2 -->\n        <div class=\"slide\">Free US Shipping on Orders over $30<\/div>\n    <\/div>",
+        "html": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Text Carousel<\/title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n\n\n    <div class=\"carousel-container\">\n        <div class=\"carousel\">\n            <!-- Slide 1 -->\n            <div class=\"slide\">10% OFF With Code Charcoal<\/div>\n\n            <!-- Slide 2 -->\n            <div class=\"slide\">Free US Shipping on Orders over $30<\/div>\n        <\/div>\n    <\/div>\n    <script src=\"script.js\"><\/script>",
         "bg_color": "",
         "container": "container",
         "text_align": "text-center",
