@@ -55,7 +55,7 @@
           "738cdbe4-d453-45ea-8940-aed81d08bf3b": {
             "type": "menu",
             "settings": {
-              "menu": "",
+              "menu": "shop",
               "title": "Shop",
               "title_size": "h6"
             }
@@ -72,7 +72,7 @@
             "type": "menu",
             "settings": {
               "menu": "footer",
-              "title": "Legal",
+              "title": "Contact Us",
               "title_size": "h6"
             }
           }
