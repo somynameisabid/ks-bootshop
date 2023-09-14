@@ -2,8 +2,11 @@
   "sections": {
     "5478aba4-45e1-46c4-a977-a2cbaf7e6c39": {
       "type": "html",
+      "custom_css": [
+
+      ],
       "settings": {
-        "html": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Text Carousel<\/title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n\n\n    <div class=\"carousel-container\">\n        <div class=\"carousel\">\n            <!-- Slide 1 -->\n            <div class=\"slide\">10% OFF With Code Charcoal<\/div>\n\n            <!-- Slide 2 -->\n            <div class=\"slide\">Free US Shipping on Orders over $30<\/div>\n        <\/div>\n    <\/div>\n    <script src=\"script.js\"><\/script>",
+        "html": "<body>\n\n\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Horizontal Text Carousel<\/title>\n    <style>\n        \/* Carousel Container *\/\n        .carousel-container {\n            width: 100%; \/* Full width of the screen *\/\n            overflow: hidden;\n            position: relative;\n        }\n\n        \/* Carousel *\/\n        .carousel {\n            display: flex;\n            background-color: green;\n            color: white;\n            overflow: hidden;\n            animation: slide 8s linear infinite;\n        }\n\n        \/* Individual Slide *\/\n        .slide {\n            min-width: 100%; \/* Each slide takes full width of the screen *\/\n            padding: 10px;\n            text-align: center;\n            font-size: 16px; \/* Adjust the font size as needed *\/\n        }\n\n        \/* Slide Animation *\/\n        @keyframes slide {\n            0%, 100% {\n                transform: translateX(0);\n            }\n            25% {\n                transform: translateX(0);\n            }\n            50% {\n                transform: translateX(-100%);\n            }\n            75% {\n                transform: translateX(-100%);\n            }\n        }\n    <\/style>\n\n\n    <div class=\"carousel-container\">\n        <div class=\"carousel\">\n            <!-- Slide 1 -->\n            <div class=\"slide\">10% OFF With Code Charcoal<\/div>\n\n            <!-- Slide 2 -->\n            <div class=\"slide\">Free US Shipping on Orders over $30<\/div>\n        <\/div>\n    <\/div>\n\n<\/body>",
         "bg_color": "",
         "container": "container",
         "text_align": "text-center",
@@ -30,20 +33,6 @@
         "description_size": "fs-6",
         "pt": 0,
         "pb": 0,
-        "mt": 0,
-        "mb": 0
-      }
-    },
-    "carousel": {
-      "type": "carousel",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "controls": true,
-        "indicators": true,
-        "autoplay": true,
-        "animation": "slide",
         "mt": 0,
         "mb": 0
       }
@@ -246,7 +235,6 @@
   "order": [
     "5478aba4-45e1-46c4-a977-a2cbaf7e6c39",
     "7d156caa-7d88-4bed-afea-425806769175",
-    "carousel",
     "165151877352b831f8",
     "1651754599ab801902",
     "1651733459a1bea1c2",
