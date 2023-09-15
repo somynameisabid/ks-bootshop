@@ -1,0 +1,284 @@
+{
+  "sections": {
+    "7d156caa-7d88-4bed-afea-425806769175": {
+      "type": "html",
+      "settings": {
+        "html": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your Shopify Website<\/title>\n    <!-- Include your CSS stylesheet if necessary -->\n    <link rel=\"stylesheet\" href=\"styles.css\">\n\n\n    <header>\n        <!-- Your website header content goes here -->\n    <\/header>\n\n    <!-- Hero Section -->\n    <section class=\"hero\">\n        <a href=\"\/collections\/frontpage\" class=\"hero-link\">\n            <img src=\"\/cdn\/shop\/files\/Black_and_White_Modern_Minimalist_Simple_Fashion_New_Arrivals_Facebook_Ad.png\" alt=\"Hero Image\">\n        <\/a>\n    <\/section>\n\n    <!-- Main Content and other sections go here -->\n\n    <footer>\n        <!-- Your website footer content goes here -->\n    <\/footer>",
+        "bg_color": "",
+        "container": "container",
+        "text_align": "text-center",
+        "title": "",
+        "title_size": "h6",
+        "description": "",
+        "description_size": "fs-6",
+        "pt": 0,
+        "pb": 0,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "165151877352b831f8": {
+      "type": "featured-products",
+      "settings": {
+        "products": [
+          "bamboo-charcoal-toothpaste-teeth-whitening-powder-toothbrush-set",
+          "bamboo-charcoal-soft-bamboo-fiber-bristle-toothbrush",
+          "tongue-brush-and-tongue-scraper",
+          "ultra-fine-soft-bamboo-charcoal-antibacterial-toothbrush",
+          "portable-stainless-steel-water-drop-tongue-scraper-cleane-tongue-scraper-cleane",
+          "bamboo-toothbrush-novelty-wooden-teeth-brush-soft-bristle-bamboo-fibre-wooden-handle-bamboo-tube-charcoal-set"
+        ],
+        "bg_color": "bg-light text-dark",
+        "text_align": "text-center",
+        "title": "Featured Products",
+        "title_size": "h2",
+        "description": "",
+        "description_size": "fs-6",
+        "product_img_orientation": "potrait",
+        "product_img_border": "rounded",
+        "product_title_size": "h6",
+        "mobile_scroll": true,
+        "breakpoint_xs": 2,
+        "breakpoint_sm": 2,
+        "breakpoint_md": 2,
+        "breakpoint_lg": 3,
+        "breakpoint_xl": 4,
+        "breakpoint_xxl": 4,
+        "btn_show": true,
+        "btn_text": "View All",
+        "btn_url": "shopify:\/\/collections\/all",
+        "btn_color": "btn-primary",
+        "pt": 13,
+        "pb": 11,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "1651754599ab801902": {
+      "type": "image-with-text",
+      "settings": {
+        "bg_color": "bg-light text-body",
+        "text_align": "text-start",
+        "image": "shopify:\/\/shop_images\/1612330604769-removebg-upscaled.png",
+        "img_orientation": "landscape-x2",
+        "img_crop": "center",
+        "img_border": "img-thumbnail",
+        "img_align_desktop": "flex-lg-row",
+        "title": "Teeth Whitening Kit",
+        "title_size": "h2",
+        "subtitle": "Bamboo Charcoal",
+        "subtitle_size": "fs-6",
+        "description": "<p>Our Natural Teeth Whitening Kit offers unbeatable gum protection, tooth repair, plaque and calculus reduction. Plus, it relieves your gums and refreshes your breath.<\/p>",
+        "description_size": "fs-6",
+        "btn_text": "Learn more",
+        "btn_url": "shopify:\/\/pages\/bamboo-charcoal-toothbrush-landing-page",
+        "btn_color": "btn-primary",
+        "btn_size": "",
+        "pt": 11,
+        "pb": 11,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "1651733459a1bea1c2": {
+      "type": "featured-collections",
+      "blocks": {
+        "8c529e86-7b51-4d75-baa3-1d4681b8c75c": {
+          "type": "collection",
+          "settings": {
+            "collection": "bamboo-toothbrushes",
+            "title": ""
+          }
+        },
+        "77c3798e-6857-46a0-92bc-df3c48109366": {
+          "type": "collection",
+          "settings": {
+            "collection": "tooth-powder",
+            "title": ""
+          }
+        },
+        "ec048dd5-f669-4b0e-811b-cd904f95bde5": {
+          "type": "collection",
+          "settings": {
+            "collection": "toothpaste",
+            "title": ""
+          }
+        },
+        "ec7164c1-d2b0-4fd9-b81f-18204c938d9a": {
+          "type": "collection",
+          "settings": {
+            "collection": "natural-soap",
+            "title": ""
+          }
+        },
+        "9e860958-3e5a-44e1-ace8-49e74c8ea9ef": {
+          "type": "collection",
+          "settings": {
+            "collection": "essential-oils",
+            "title": ""
+          }
+        },
+        "e86d0893-60ca-4bbf-aa40-c1ea7de37bec": {
+          "type": "collection",
+          "settings": {
+            "collection": "derma-rollers-1",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "8c529e86-7b51-4d75-baa3-1d4681b8c75c",
+        "77c3798e-6857-46a0-92bc-df3c48109366",
+        "ec048dd5-f669-4b0e-811b-cd904f95bde5",
+        "ec7164c1-d2b0-4fd9-b81f-18204c938d9a",
+        "9e860958-3e5a-44e1-ace8-49e74c8ea9ef",
+        "e86d0893-60ca-4bbf-aa40-c1ea7de37bec"
+      ],
+      "settings": {
+        "bg_color": "bg-light text-dark",
+        "text_align": "text-center",
+        "title": "Shop By Category",
+        "title_size": "h2",
+        "description": "",
+        "description_size": "fs-6",
+        "collection_img_orientation": "landscape",
+        "collection_img_border": "img-thumbnail",
+        "btn_text": "View all collections",
+        "btn_color": "btn-outline-secondary",
+        "breakpoint_xs": 1,
+        "breakpoint_sm": 1,
+        "breakpoint_md": 2,
+        "breakpoint_lg": 3,
+        "breakpoint_xl": 3,
+        "breakpoint_xxl": 3,
+        "pt": 10,
+        "pb": 11,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "16517348541d37c171": {
+      "type": "separator",
+      "settings": {
+        "full_width": false,
+        "opacity": 0.1,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "59affe69-238f-45f0-b154-94b9dc487cff": {
+      "type": "featured-products",
+      "settings": {
+        "products": [
+          "bamboo-charcoal-toothbrush-set",
+          "black-bamboo-charcoal-tooth-powder",
+          "bamboo-charcoal-tooth-powder"
+        ],
+        "bg_color": "",
+        "text_align": "text-center",
+        "title": "Natural Tooth Powder",
+        "title_size": "h2",
+        "description": "",
+        "description_size": "fs-6",
+        "product_img_orientation": "square",
+        "product_img_border": "img-thumbnail",
+        "product_title_size": "h6",
+        "mobile_scroll": true,
+        "breakpoint_xs": 1,
+        "breakpoint_sm": 2,
+        "breakpoint_md": 3,
+        "breakpoint_lg": 3,
+        "breakpoint_xl": 3,
+        "breakpoint_xxl": 3,
+        "btn_show": false,
+        "btn_text": "View more products",
+        "btn_url": "",
+        "btn_color": "btn-primary",
+        "pt": 10,
+        "pb": 10,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "971921e6-4662-41ca-af02-9f1f04bdfb20": {
+      "type": "featured-products",
+      "settings": {
+        "products": [
+          "4-sticks-essential-oil-set-massage-essential-oil",
+          "rosemary-essential-oil-10ml"
+        ],
+        "bg_color": "",
+        "text_align": "text-center",
+        "title": "Essential Oil Collection",
+        "title_size": "h2",
+        "description": "",
+        "description_size": "fs-6",
+        "product_img_orientation": "square",
+        "product_img_border": "img-thumbnail",
+        "product_title_size": "h6",
+        "mobile_scroll": true,
+        "breakpoint_xs": 1,
+        "breakpoint_sm": 1,
+        "breakpoint_md": 2,
+        "breakpoint_lg": 3,
+        "breakpoint_xl": 3,
+        "breakpoint_xxl": 3,
+        "btn_show": false,
+        "btn_text": "View more products",
+        "btn_url": "",
+        "btn_color": "btn-primary",
+        "pt": 10,
+        "pb": 0,
+        "mt": 0,
+        "mb": 10
+      }
+    },
+    "a61cd552-07d3-44b2-9a6a-56414bd37603": {
+      "type": "featured-products",
+      "settings": {
+        "products": [
+          "100g-handmade-soap-essential-oil-moisturizing-unique-smell-natural-bath-body-skin-care-deep-cleansing-honey-soap-china",
+          "bamboo-charcoal-handmade-soap",
+          "handmade-black-charcoal-bamboo-soap",
+          "natural-bamboo-charcoal-handmade-soap",
+          "rosemary-mint-scalp-hair-strengthening-oil",
+          "thai-honey-handmade-soap"
+        ],
+        "bg_color": "",
+        "text_align": "text-center",
+        "title": "Body & Hair",
+        "title_size": "h2",
+        "description": "",
+        "description_size": "fs-6",
+        "product_img_orientation": "square",
+        "product_img_border": "img-thumbnail",
+        "product_title_size": "h6",
+        "mobile_scroll": true,
+        "breakpoint_xs": 1,
+        "breakpoint_sm": 1,
+        "breakpoint_md": 3,
+        "breakpoint_lg": 3,
+        "breakpoint_xl": 3,
+        "breakpoint_xxl": 3,
+        "btn_show": true,
+        "btn_text": "View more products",
+        "btn_url": "",
+        "btn_color": "btn-primary",
+        "pt": 10,
+        "pb": 10,
+        "mt": 0,
+        "mb": 0
+      }
+    }
+  },
+  "order": [
+    "7d156caa-7d88-4bed-afea-425806769175",
+    "165151877352b831f8",
+    "1651754599ab801902",
+    "1651733459a1bea1c2",
+    "16517348541d37c171",
+    "59affe69-238f-45f0-b154-94b9dc487cff",
+    "971921e6-4662-41ca-af02-9f1f04bdfb20",
+    "a61cd552-07d3-44b2-9a6a-56414bd37603"
+  ]
+}
