@@ -122,7 +122,7 @@
         {%- liquid
           if request.page_type == 'product'
             if 'static' == 'static'
-              if '8661699395884' == 'latest'
+              if '8674848309548' == 'latest'
                 paginate collections.all.products by 100000
                   assign product = collections.all.products | sort: 'created_at' | reverse | first
                 endpaginate
@@ -131,7 +131,7 @@
                 if product == empty or product == null
                   paginate collections.all.products by 100000
                     for item in collections.all.products 
-                      if item.id == '8661699395884'
+                      if item.id == '8674848309548'
                         assign product = item
                       endif
                     endfor
@@ -140,7 +140,7 @@
               endif
             endif
           else
-            if '8661699395884' == 'latest'
+            if '8674848309548' == 'latest'
               paginate collections.all.products by 100000
                 assign product = collections.all.products | sort: 'created_at'| reverse | first
               endpaginate
@@ -149,7 +149,7 @@
               if product == empty or product == null
                 paginate collections.all.products by 100000
                   for item in collections.all.products 
-                    if item.id == '8661699395884'
+                    if item.id == '8674848309548'
                       assign product = item
                     endif
                   endfor
@@ -315,7 +315,7 @@
         class="g-paragraph-2 gp-text"
         style="--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;word-break:break-word"
       >
-      <p>On oders over $30</p>
+      <p>On ALL ORDERS</p>
       </div>
     </div>
     </div>
