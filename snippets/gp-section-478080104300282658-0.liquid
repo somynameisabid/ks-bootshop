@@ -67,7 +67,7 @@
       {%-if variant == empty or variant == null -%}
         {%- assign variant = product.selected_or_first_available_variant -%}
       {%- endif -%}
-      <gp-product gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+      <gp-product class="" gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
         gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1}'>
         {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
           <input type="hidden" name="id" value="{{ variant.id }}" />
@@ -275,7 +275,7 @@
           >
             
   <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-carousel.js" defer="defer"></script>
-    <gp-carousel type="grid-carousel" id="gp-root-carousel-g3_3LfdJ8O-{{product.id}}" class="flex-1 w-full carousel-gallery"  gp-data='{"id":"g3_3LfdJ8O-{{product.id}}","setting":{"loop":{"desktop":true,"mobile":true,"tablet":true},"slidesToShow":{"desktop":5,"mobile":3,"tablet":5},"dot":{"desktop":false,"tablet":false,"mobile":false},"arrow":{"desktop":true,"mobile":true,"tablet":true},"controlOverContent":{"desktop":true,"mobile":true,"tablet":true},"enableDrag":true,"vertical":{"desktop":false,"mobile":false,"tablet":false},"dotActiveColor":{"desktop":"highlight"},"dotColor":{"desktop":"bg-1"},"arrowCustom":""},"styles":{"fullWidth":{"desktop":true,"mobile":true,"tablet":true},"width":{"desktop":"100%","tablet":"100%","mobile":"100%"},"spacing":{"desktop":5,"tablet":5,"mobile":5},"adaptiveHeight":{"desktop":true,"mobile":true,"tablet":true}},"isHiddenArrowWhenDisabled":true}' style="--d:none;--d-mobile:none;--d-tablet:none">
+    <gp-carousel type="grid-carousel" id="gp-root-carousel-g3_3LfdJ8O-{{product.id}}" class="flex-1 w-full carousel-gallery "  gp-data='{"id":"g3_3LfdJ8O-{{product.id}}","setting":{"loop":{"desktop":true,"mobile":true,"tablet":true},"slidesToShow":{"desktop":5,"mobile":3,"tablet":5},"dot":{"desktop":false,"tablet":false,"mobile":false},"arrow":{"desktop":true,"mobile":true,"tablet":true},"controlOverContent":{"desktop":true,"mobile":true,"tablet":true},"enableDrag":true,"vertical":{"desktop":false,"mobile":false,"tablet":false},"dotActiveColor":{"desktop":"highlight"},"dotColor":{"desktop":"bg-1"},"arrowCustom":""},"styles":{"fullWidth":{"desktop":true,"mobile":true,"tablet":true},"width":{"desktop":"100%","tablet":"100%","mobile":"100%"},"spacing":{"desktop":5,"tablet":5,"mobile":5},"adaptiveHeight":{"desktop":true,"mobile":true,"tablet":true}},"isHiddenArrowWhenDisabled":true}' style="--d:none;--d-mobile:none;--d-tablet:none">
       <div class="hidden aspect-square w-[12px] rounded-full shadow-md"></div>
       <div
         
@@ -675,7 +675,7 @@
    <gp-product-tag
     data-disabled="{%- if priceSave > 0 -%} false {%- else -%} true {%- endif -%}"
     gp-data='{"setting":{"customContent":{"prefix":"You saved","suffix":"","unit":"price"}}, "id": "gTQtlBi1iE", "locale": "{{shop.locale}}", "currency": "{{shop.currency}}", "moneyFormat": "{{ shop.money_format | replace: '"', '\"' | escape }}"}'
-    class="block data-[disabled=true]:hidden"
+    class="block data-[disabled=true]:hidden "
     style="--ta:center"
   >
  
@@ -688,7 +688,7 @@
          
     <div
       id="p-tag-gTQtlBi1iE"
-        class=""
+        class=" "
         style=""
       >
       <div
@@ -728,14 +728,14 @@
       <gp-product-price
         gp-data='{"priceType":"regular","uid":"g4Ea69ex3h","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
         
-        class="g4Ea69ex3h data-[hidden=true]:hidden"
+        class=" data-[hidden=true]:hidden"
         style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
         data-hidden="false"
       >
         
     <div
       id="p-price-g4Ea69ex3h"
-        class=""
+        class=" "
         style=""
       >
       <div
@@ -762,14 +762,14 @@
       <gp-product-price
         gp-data='{"priceType":"compare","uid":"gRHlEcHKAm","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
         
-        class="gRHlEcHKAm data-[hidden=true]:hidden"
+        class=" data-[hidden=true]:hidden"
         style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
         data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
       >
         
     <div
       id="p-price-gRHlEcHKAm"
-        class=""
+        class=" "
         style=""
       >
       <div
@@ -814,7 +814,7 @@
    <gp-product-tag
     data-disabled="{%- if priceSave > 0 -%} false {%- else -%} true {%- endif -%}"
     gp-data='{"setting":{"customContent":{"prefix":"You saved","suffix":"","unit":"price"}}, "id": "g2sEoFRxTc", "locale": "{{shop.locale}}", "currency": "{{shop.currency}}", "moneyFormat": "{{ shop.money_format | replace: '"', '\"' | escape }}"}'
-    class="block data-[disabled=true]:hidden"
+    class="block data-[disabled=true]:hidden "
     style="--ta:left"
   >
  
@@ -827,7 +827,7 @@
          
     <div
       id="p-tag-g2sEoFRxTc"
-        class=""
+        class=" "
         style=""
       >
       <div
@@ -846,7 +846,7 @@
       </div><div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--mb-mobile:10px" class="gMWJAzCN0d ">
       
     <gp-accordion
-      class="flex w-full flex-col"
+      class="flex w-full flex-col "
       style="--rg:none"
       gp-data='{"setting":{"expanded":false,"expandItem":false,"activeKey":1,"isIconPlus":false,"iconPosition":"right"},"styles":{"bgColor":{"normal":"transparent"},"color":{"normal":"#575757"},"headerBorder":{"normal":{"border":"none","borderLabel":"None","borderType":"none","color":"transparent","isCustom":false,"width":"0px 0px 0px 0px"}},"itemBorder":{"normal":{"border":"none","borderType":"none","color":"transparent","isCustom":false}},"itemRounded":{"normal":{"radiusType":"none"}},"width":{"desktop":"1170px"},"fullWidth":{"desktop":true},"textColor":{"normal":"#575757"},"itemHeaderSpacing":{"custom":{"mobile":{"horizontal":"0px","vertical":"0px"}}}},"uid":"gMWJAzCN0d"}'
     >
@@ -879,7 +879,7 @@
         
     <div
       
-        class=""
+        class=" "
         style=""
       >
       <span
@@ -949,7 +949,7 @@
       
     <div
       parentTag="Col"
-        class="g2SXc9uv3o"
+        class="g2SXc9uv3o "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -998,7 +998,7 @@
       
     <div
       parentTag="Col"
-        class="goVhBjKOGl"
+        class="goVhBjKOGl "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1037,7 +1037,7 @@
         <div
     
     style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mt:var(--g-s-2xl);--mt-mobile:0px;--mt-tablet:21px;--ta:center"
-    class="{% unless variant.available %} !hidden {% endunless %}"
+    class="{% unless variant.available %} !hidden {% endunless %} undefined"
   >
     <style>
     .gfTRkwnNIY.gp-button-base::before {

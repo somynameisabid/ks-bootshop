@@ -171,7 +171,7 @@
       {%-if variant == empty or variant == null -%}
         {%- assign variant = product.selected_or_first_available_variant -%}
       {%- endif -%}
-      <gp-product gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+      <gp-product class="" gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
         gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1}'>
         {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
           <input type="hidden" name="id" value="{{ variant.id }}" />
@@ -293,7 +293,7 @@
       
     <div
       parentTag="Col"
-        class="gDFiFa-__9"
+        class="gDFiFa-__9 "
         style="--tt:default"
       >
       <h2
@@ -307,7 +307,7 @@
       </div>
     <div
       parentTag="Col"
-        class="gkRY_aSQFW"
+        class="gkRY_aSQFW "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -377,7 +377,7 @@
       
     <div
       parentTag="Col"
-        class="gqU2TiEPct"
+        class="gqU2TiEPct "
         style="--tt:default"
       >
       <h2
@@ -391,7 +391,7 @@
       </div>
     <div
       parentTag="Col"
-        class="gPxVJ3QVXb"
+        class="gPxVJ3QVXb "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -621,7 +621,7 @@
           >
             
   <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-carousel.js" defer="defer"></script>
-    <gp-carousel type="grid-carousel" id="gp-root-carousel-gZfGo1gGE8-{{product.id}}" class="flex-1 w-full carousel-gallery"  gp-data='{"id":"gZfGo1gGE8-{{product.id}}","setting":{"loop":{"desktop":true,"mobile":true,"tablet":true},"slidesToShow":{"desktop":5,"mobile":3,"tablet":5},"dot":{"desktop":false,"tablet":false,"mobile":false},"arrow":{"desktop":true,"mobile":true,"tablet":true},"controlOverContent":{"desktop":true,"mobile":true,"tablet":true},"enableDrag":true,"vertical":{"desktop":false,"mobile":false,"tablet":false},"dotActiveColor":{"desktop":"highlight"},"dotColor":{"desktop":"bg-1"},"arrowCustom":"<svg width=\"40\" height=\"41\" viewBox=\"0 0 40 41\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17.4852 15.7352C17.52 15.7002 17.5614 15.6725 17.6069 15.6536C17.6525 15.6347 17.7013 15.625 17.7507 15.625C17.8 15.625 17.8488 15.6347 17.8944 15.6536C17.94 15.6725 17.9813 15.7002 18.0162 15.7352L22.5162 20.2352C22.5511 20.27 22.5788 20.3114 22.5977 20.3569C22.6166 20.4025 22.6263 20.4513 22.6263 20.5007C22.6263 20.55 22.6166 20.5988 22.5977 20.6444C22.5788 20.69 22.5511 20.7313 22.5162 20.7662L18.0162 25.2662C17.9458 25.3366 17.8503 25.3761 17.7507 25.3761C17.6511 25.3761 17.5556 25.3366 17.4852 25.2662C17.4148 25.1958 17.3752 25.1003 17.3752 25.0007C17.3752 24.9011 17.4148 24.8056 17.4852 24.7352L21.7204 20.5007L17.4852 16.2662C17.4502 16.2313 17.4225 16.19 17.4036 16.1444C17.3847 16.0988 17.375 16.05 17.375 16.0007C17.375 15.9513 17.3847 15.9025 17.4036 15.8569C17.4225 15.8114 17.4502 15.77 17.4852 15.7352Z\" fill=\"#242424\"/> <rect x=\"0.5\" y=\"1\" width=\"39\" height=\"39\" rx=\"19.5\" stroke=\"#E0E0E0\"/> </svg>"},"styles":{"fullWidth":{"desktop":true,"mobile":true,"tablet":true},"width":{"desktop":"100%","tablet":"100%","mobile":"100%"},"spacing":{"desktop":5,"tablet":5,"mobile":4},"adaptiveHeight":{"desktop":true,"mobile":true,"tablet":true}},"isHiddenArrowWhenDisabled":true}' style="--d:none;--d-mobile:flex;--d-tablet:none">
+    <gp-carousel type="grid-carousel" id="gp-root-carousel-gZfGo1gGE8-{{product.id}}" class="flex-1 w-full carousel-gallery "  gp-data='{"id":"gZfGo1gGE8-{{product.id}}","setting":{"loop":{"desktop":true,"mobile":true,"tablet":true},"slidesToShow":{"desktop":5,"mobile":3,"tablet":5},"dot":{"desktop":false,"tablet":false,"mobile":false},"arrow":{"desktop":true,"mobile":true,"tablet":true},"controlOverContent":{"desktop":true,"mobile":true,"tablet":true},"enableDrag":true,"vertical":{"desktop":false,"mobile":false,"tablet":false},"dotActiveColor":{"desktop":"highlight"},"dotColor":{"desktop":"bg-1"},"arrowCustom":"<svg width=\"40\" height=\"41\" viewBox=\"0 0 40 41\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17.4852 15.7352C17.52 15.7002 17.5614 15.6725 17.6069 15.6536C17.6525 15.6347 17.7013 15.625 17.7507 15.625C17.8 15.625 17.8488 15.6347 17.8944 15.6536C17.94 15.6725 17.9813 15.7002 18.0162 15.7352L22.5162 20.2352C22.5511 20.27 22.5788 20.3114 22.5977 20.3569C22.6166 20.4025 22.6263 20.4513 22.6263 20.5007C22.6263 20.55 22.6166 20.5988 22.5977 20.6444C22.5788 20.69 22.5511 20.7313 22.5162 20.7662L18.0162 25.2662C17.9458 25.3366 17.8503 25.3761 17.7507 25.3761C17.6511 25.3761 17.5556 25.3366 17.4852 25.2662C17.4148 25.1958 17.3752 25.1003 17.3752 25.0007C17.3752 24.9011 17.4148 24.8056 17.4852 24.7352L21.7204 20.5007L17.4852 16.2662C17.4502 16.2313 17.4225 16.19 17.4036 16.1444C17.3847 16.0988 17.375 16.05 17.375 16.0007C17.375 15.9513 17.3847 15.9025 17.4036 15.8569C17.4225 15.8114 17.4502 15.77 17.4852 15.7352Z\" fill=\"#242424\"/> <rect x=\"0.5\" y=\"1\" width=\"39\" height=\"39\" rx=\"19.5\" stroke=\"#E0E0E0\"/> </svg>"},"styles":{"fullWidth":{"desktop":true,"mobile":true,"tablet":true},"width":{"desktop":"100%","tablet":"100%","mobile":"100%"},"spacing":{"desktop":5,"tablet":5,"mobile":4},"adaptiveHeight":{"desktop":true,"mobile":true,"tablet":true}},"isHiddenArrowWhenDisabled":true}' style="--d:none;--d-mobile:flex;--d-tablet:none">
       <div class="hidden aspect-square w-[12px] rounded-full shadow-md"></div>
       <div
         
@@ -996,7 +996,7 @@
       
     <div
       parentTag="Col"
-        class="gJ3ZO9w9uq"
+        class="gJ3ZO9w9uq "
         style=""
       >
       <h2
@@ -1171,7 +1171,7 @@
       
     <div
       parentTag="Col"
-        class="gabTUvQcSK"
+        class="gabTUvQcSK "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1232,7 +1232,7 @@
       
     <div
       parentTag="Col"
-        class="gSBUHP33Rn"
+        class="gSBUHP33Rn "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1281,7 +1281,7 @@
       
     <div
       parentTag="Col"
-        class="gJEx0EecRC"
+        class="gJEx0EecRC "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1330,7 +1330,7 @@
       
     <div
       parentTag="Col"
-        class="g3AXifqyEr"
+        class="g3AXifqyEr "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1363,14 +1363,14 @@
       <gp-product-price
         gp-data='{"priceType":"regular","uid":"gKJdK0xFJz","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
         
-        class="gKJdK0xFJz data-[hidden=true]:hidden"
+        class=" data-[hidden=true]:hidden"
         style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
         data-hidden="false"
       >
         
     <div
       id="p-price-gKJdK0xFJz"
-        class=""
+        class=" "
         style=""
       >
       <div
@@ -1397,14 +1397,14 @@
       <gp-product-price
         gp-data='{"priceType":"compare","uid":"g929PHIFFf","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
         
-        class="g929PHIFFf data-[hidden=true]:hidden"
+        class=" data-[hidden=true]:hidden"
         style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
         data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
       >
         
     <div
       id="p-price-g929PHIFFf"
-        class=""
+        class=" "
         style=""
       >
       <div
@@ -1451,7 +1451,7 @@
    <gp-product-tag
     data-disabled="{%- if priceSave > 0 -%} false {%- else -%} true {%- endif -%}"
     gp-data='{"setting":{"customContent":{"prefix":"You saved","suffix":"","unit":"price"}}, "id": "ggg4igo1Nn", "locale": "{{shop.locale}}", "currency": "{{shop.currency}}", "moneyFormat": "{{ shop.money_format | replace: '"', '\"' | escape }}"}'
-    class="block data-[disabled=true]:hidden"
+    class="block data-[disabled=true]:hidden "
     style="--ta:left"
   >
  
@@ -1464,7 +1464,7 @@
          
     <div
       id="p-tag-ggg4igo1Nn"
-        class=""
+        class=" "
         style=""
       >
       <div
@@ -1531,7 +1531,7 @@
       
     <div
       parentTag="Col"
-        class="g_Cgow8JO9"
+        class="g_Cgow8JO9 "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1580,7 +1580,7 @@
       
     <div
       parentTag="Col"
-        class="gvreSjgg0K"
+        class="gvreSjgg0K "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1629,7 +1629,7 @@
       
     <div
       parentTag="Col"
-        class="g6_eXVqyxo"
+        class="g6_eXVqyxo "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1678,7 +1678,7 @@
       
     <div
       parentTag="Col"
-        class="gk5owMLIZi"
+        class="gk5owMLIZi "
         style="--tt:default;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
       >
       <div
@@ -1707,7 +1707,7 @@
         <div
     
     style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:none;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mt:var(--g-s-xl);--mb:var(--g-s-l);--mr:var(--g-s-3xl);--mt-mobile:var(--g-s-xl);--ml-mobile:0px;--mb-mobile:var(--g-s-l);--mr-mobile:0px;--ta:left"
-    class="{% unless variant.available %} !hidden {% endunless %}"
+    class="{% unless variant.available %} !hidden {% endunless %} undefined"
   >
     <style>
     .gQOwM3iDWo.gp-button-base::before {
@@ -2070,7 +2070,7 @@
         <div
     
     style="--b:solid;--bc:#121212;--bw:0px;--bottom-mobile:15px;--shadow:none;--d:none;--d-mobile:block;--d-tablet:none;--left-mobile:15px;--op:100%;--pos-mobile:fixed;--right-mobile:15px;--radius:var(--g-radius-none);--mt:var(--g-s-xl);--mb:var(--g-s-l);--mr:var(--g-s-3xl);--mt-mobile:auto;--ml-mobile:0px;--mb-mobile:auto;--mr-mobile:0px;--z-mobile:9999;--ta:left"
-    class="{% unless variant.available %} !hidden {% endunless %}"
+    class="{% unless variant.available %} !hidden {% endunless %} undefined"
   >
     <style>
     .geXAkfF-u8.gp-button-base::before {
