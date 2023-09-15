@@ -1,183 +1,7 @@
 
   
       <style>
-        @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: normal;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVQ.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVQ.woff) format('woff');
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* hebrew */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* hebrew */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700,400&display=swap');
       </style>
     
   <style>
@@ -414,54 +238,21 @@
       </div>
     </div>
   
-      </div><div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="g0pGgaxjEU ">
+      </div><div style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%" class="g8rPEJfTfN ">
       
-  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-tag.js" defer="defer"></script>
-  {% liquid 
-    assign price = variant.price | times: 1.0
-    assign salePrice = variant.compare_at_price | times: 1.0
-    assign priceSave = salePrice | minus: price
-    if salePrice == null or price == null
-      assign pricePercentage = 'SAVE ' | append: '0%' | append: ' '
-    else 
-         assign salePercent = priceSave | divided_by: salePrice | times: 100  | ceil 
-                assign pricePercentage = 'SAVE ' | append: salePercent | append: '%' | append: ' '
-              
-    endif
-  %}
-
-   <gp-product-tag
-    data-disabled="{%- if priceSave > 0 -%} false {%- else -%} true {%- endif -%}"
-    gp-data='{"setting":{"customContent":{"prefix":"SAVE","suffix":"","unit":"percentage"}}, "id": "g0pGgaxjEU", "locale": "{{shop.locale}}", "currency": "{{shop.currency}}", "moneyFormat": "{{ shop.money_format | replace: '"', '\"' | escape }}"}'
-    class="block data-[disabled=true]:hidden "
-    style="--ta:center"
-  >
- 
-     <div class="inline-flex flex-wrap items-end gap-3">
-       <div
-         class="inline-block g-s-tag-medium"
-         style="--bs:none;--bw:0px;--bc:transparent;--c:#242424;--bg:transparent;--radius:var(--g-radius-large)"
-       >
-      
-         
     <div
-      id="p-tag-g0pGgaxjEU"
-        class=" "
+      parentTag="Col"
+        class="g8rPEJfTfN "
         style=""
       >
-      <div
+      <h2
         data-gp-text
-        class=""
-        style="--ta:center;--c:#242424;--size:23px;--lh:130%;--fs:normal;--ff:var(--g-font-heading, heading);--weight:700;--ls:normal;--size-tablet:20px;--ff-tablet:var(--g-font-heading, heading);--weight-tablet:700;--size-mobile:20px;--ff-mobile:var(--g-font-heading, heading);--weight-mobile:700;word-break:break-word"
+        class="gp-text"
+        style="--ta:center;--fs:normal;--ff:var(--g-font-Roboto, Roboto);--weight:500;--ls:normal;--lh:120%;--size:24px;--size-tablet:26px;--size-mobile:24px;--c:#999999;word-break:break-word"
       >
-      {{pricePercentage}}
-      </div>
+      <p>SAVE 0%</p>
+      </h2>
     </div>
-       </div>
-     </div>
-
- </gp-product-tag>
-   
       </div>
   <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-images.js" defer="defer"></script>
   {% assign featured_image = product.featured_image %}
@@ -1274,7 +1065,7 @@
         class="gp-text"
         style="--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#242424;--size:16px;--lh:150%;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size-tablet:12px;--lh-tablet:150%;--size-mobile:14px;word-break:break-word"
       >
-      <p>30 Days Money Back Renturn</p>
+      <p>30 Days Money Back Return</p>
       </div>
     </div>
     </div>
@@ -1599,7 +1390,7 @@
       
     <div
       id
-        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--cg:30px;--pc:start;--gtc:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--cg:30px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%"
         class="mx-auto mb-0 grid max-w-full transition-colors duration-200 ease-in-out [&_*]:max-w-full"
     >
     <div
@@ -1674,6 +1465,21 @@
       </div>
     </div>
   
+      </div><div style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%" class="gYuXy4K-cI ">
+      
+    <div
+      parentTag="Col"
+        class="gYuXy4K-cI "
+        style=""
+      >
+      <h2
+        data-gp-text
+        class="gp-text"
+        style="--ta:center;--fs:normal;--ff:var(--g-font-Roboto, Roboto);--weight:500;--ls:normal;--lh:120%;--size:24px;--size-tablet:26px;--size-mobile:24px;--c:#FF0000;word-break:break-word"
+      >
+      <p>SAVE 29.5%</p>
+      </h2>
+    </div>
       </div>
       
       
@@ -1691,7 +1497,7 @@
     
     role="presentation"
     class="group/image overflow-hidden gLh136krDX"
-    style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--ta:center"
+    style="--mb:0px;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%;--ta:center"
   >
     <div
       
@@ -1723,7 +1529,7 @@
       
     <div
       parentTag="Col" id="gU9IGfGtiU"
-        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:0px;--pt:var(--g-s-2xl);--pt-mobile:var(--g-s-2xl);--pt-tablet:21px;--cg:var(--g-s-s);--pc:start;--pc-tablet:center;--gtc:minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:0px;--pt:var(--g-s-2xl);--pt-mobile:var(--g-s-2xl);--pt-tablet:21px;--cg:var(--g-s-s);--pc:start;--pc-tablet:center;--gtc:minmax(0, auto) minmax(0, auto) minmax(0, auto);--gtc-mobile:minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
         class="gU9IGfGtiU mx-auto mb-0 grid max-w-full transition-colors duration-200 ease-in-out [&_*]:max-w-full"
     >
     <div
@@ -1740,11 +1546,51 @@
       <div
         data-gp-text
         class="gp-text"
-        style="--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font--apple-system, -apple-system);--ls:normal;--lh:150%;--size:19px;--size-tablet:14px;--size-mobile:14px;--weight:bold;--c:var(--g-c-text-1, text-1);word-break:break-word"
+        style="--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-Open-Sans, Open Sans);--ls:normal;--lh:150%;--size:19px;--size-tablet:14px;--size-mobile:14px;--weight:bold;--c:var(--g-c-text-1, text-1);word-break:break-word"
       >
-      <p>$19.09 (Choose Set 3)</p>
+      <p>$19.09</p>
       </div>
     </div>
+    </div><div
+      tag="Col" label="Block" type="component"
+      style="--jc:center"
+      class="gXB-qvQ4t8 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="g9i4LH2C3P "
+        style="--mb:0px;--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#121212;--bw:0px;--radius:var(--g-radius-none);--shadow:none;--op:100%"
+      >
+      <div
+        data-gp-text
+        class="gp-text"
+        style="--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-Open-Sans, Open Sans);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:14px;--size-mobile:14px;--c:var(--g-c-text-1, text-1);word-break:break-word"
+      >
+      <p><s>$27.09</s></p>
+      </div>
+    </div>
+    </div><div
+      tag="Col" label="Block" type="component"
+      style="--jc:center"
+      class="gpaqaOYgxN relative flex flex-col"
+    >
+      <div style="--mb:0px;--pt:var(--g-s-xs);--pl:var(--g-s-xs);--pb:var(--g-s-xs);--pr:var(--g-s-xs);--d:block;--d-tablet:block;--d-mobile:block;--b:solid;--bc:#FF0000;--bw:1px 1px 1px 1px;--bblr:6px;--bbrr:6px;--btlr:6px;--btrr:6px;--shadow:none;--op:100%" class="grMeHRBQuU ">
+      
+    <div
+      parentTag="Col"
+        class="grMeHRBQuU "
+        style=""
+      >
+      <h6
+        data-gp-text
+        class="gp-text"
+        style="--ta:center;--fs:normal;--ff:var(--g-font-Roboto, Roboto);--weight:500;--ls:0px;--lh:170%;--size:12px;--size-tablet:14px;--size-mobile:14px;--c:#FF0000;word-break:break-word"
+      >
+      <p>You Saved $8.00</p>
+      </h6>
+    </div>
+      </div>
     </div>
     </div>
   
@@ -1857,7 +1703,7 @@
         class="gp-text"
         style="--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#242424;--size:16px;--lh:150%;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size-tablet:12px;--lh-tablet:150%;--size-mobile:14px;word-break:break-word"
       >
-      <p>30 Days Money Back Renturn</p>
+      <p>30 Days Money Back Return</p>
       </div>
     </div>
     </div>
@@ -2078,12 +1924,6 @@
   </div>
     </gp-product-button>
   
-    </div><div
-      tag="Col" label="Block" type="component"
-      style="--jc:start"
-      class="gP4KFbkwCB relative flex flex-col"
-    >
-      
     </div>
     </div>
   
@@ -2365,7 +2205,7 @@
       "product":{{ product | json | escape }}
     }
   '
-    style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt-mobile:var(--g-s-2xl);--pt-tablet:14px"
+    style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:20px;--pt-mobile:var(--g-s-2xl);--pt-tablet:14px"
     class=""
   >
     <div
@@ -2999,7 +2839,7 @@
       style="--jc:center"
       class="gdPJ5OROsy relative flex flex-col"
     >
-      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:none;--op:100%;--radius:var(--g-radius-none)" class="gOHyzfj94J ">
+      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="gOHyzfj94J ">
       
   <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-tag.js" defer="defer"></script>
   {% liquid 
@@ -3166,7 +3006,7 @@
         class="gp-text"
         style="--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#242424;--size:16px;--lh:150%;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size-tablet:12px;--lh-tablet:150%;--size-mobile:14px;word-break:break-word"
       >
-      <p>30 Days Money Back Renturn</p>
+      <p>30 Days Money Back Return</p>
       </div>
     </div>
     </div>
