@@ -39,32 +39,11 @@
         "mt": 0,
         "mb": 0
       }
-    },
-    "9ef7cc85-571e-4685-b0f4-c655656a9c8c": {
-      "type": "richtext",
-      "settings": {
-        "bg_color": "",
-        "max_width": "960",
-        "text_align": "text-center",
-        "title": "Want To Say Hi?",
-        "title_size": "h3",
-        "description": "<p>Add on optional description to this section<\/p>",
-        "description_size": "fs-6",
-        "btn_text": "Drop us an email",
-        "btn_url": "shopify:\/\/pages\/contact",
-        "btn_color": "btn-primary",
-        "btn_size": "",
-        "pt": 10,
-        "pb": 10,
-        "mt": 0,
-        "mb": 0
-      }
     }
   },
   "order": [
     "165268949817e427ae",
     "1652689700430c7f0b",
-    "d751c1ef-ae9a-4d2f-b415-f968dcca9f73",
-    "9ef7cc85-571e-4685-b0f4-c655656a9c8c"
+    "d751c1ef-ae9a-4d2f-b415-f968dcca9f73"
   ]
 }
