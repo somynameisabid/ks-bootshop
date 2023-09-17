@@ -2,48 +2,11 @@
   "sections": {
     "165268949817e427ae": {
       "type": "carousel",
-      "blocks": {
-        "1652689498756fb688-0": {
-          "type": "slide",
-          "settings": {
-            "img_mobile": "shopify:\/\/shop_images\/lifestyle-2-mobile.jpg",
-            "img_mobile_height": 360,
-            "img_mobile_opacity": 0.7,
-            "img_mobile_blur": 0,
-            "caption_position_mobile": "carousel-caption-mobile-center",
-            "img_desktop": "shopify:\/\/shop_images\/lifestyle-2.jpg",
-            "img_desktop_height": 600,
-            "img_desktop_opacity": 0.7,
-            "img_desktop_blur": 0,
-            "caption_position_desktop": "carousel-caption-desktop-bottom",
-            "subtitle": "",
-            "subtitle_size": "fs-5",
-            "title": "",
-            "title_size": "h2",
-            "description": "",
-            "description_size": "fs-5",
-            "btn_text": "",
-            "btn_url": "",
-            "btn_color": "btn-primary",
-            "btn_size": "",
-            "btn_secondary_text": "",
-            "btn_secondary_url": "",
-            "btn_secondary_color": "btn-primary",
-            "btn_secondary_size": ""
-          }
-        }
-      },
-      "block_order": [
-        "1652689498756fb688-0"
-      ],
       "settings": {
         "controls": true,
-        "controls_style": "carousel-controls-arrows",
         "indicators": true,
-        "indicators_style": "carousel-indicators-circles",
         "autoplay": false,
         "animation": "slide",
-        "ken_burns": true,
         "mt": 0,
         "mb": 0
       }
@@ -54,145 +17,13 @@
         "bg_color": "bg-white text-dark",
         "max_width": "768",
         "text_align": "text-start",
-        "title": "About us",
+        "title": "Terms of Service",
         "title_size": "h1",
-        "description": "<p>Welcome to [company name], your number one source for all things [product]. We're dedicated to giving you the very best of [product], with a focus on [store characteristic 1], [store characteristic 2], [store characteristic 3].<\/p><p>Founded in [year] by [founder name], [company name] has come a long way from its beginnings in [starting location]. When [founder name] first started out, [his\/her\/their] passion for [brand message - e.g. \"eco-friendly cleaning products\"] drove them to [action: quit day job, do tons of research, etc.] so that [company name] can offer you [competitive differentiator - e.g. \"the world's most advanced toothbrush\"]. We now serve customers all over [place - town, country, the world], and are thrilled that we're able to turn our passion into [my\/our] own website.<\/p><p>[I\/we] hope you enjoy [my\/our] products as much as [I\/we] enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact [me\/us].<\/p><p>Sincerely,<br\/>[founder name]<\/p>",
+        "description": "<p>Naturely Pure Terms of Service<\/p><p><strong>1. Introduction<\/strong><br\/>Welcome to <strong>NaturelyPure<\/strong>! These Terms of Service govern your use of our website and services. Please read them carefully.<\/p><p><strong>2. User Agreement<\/strong><br\/>By accessing and using our website or services, you agree to abide by these Terms of Service and all applicable laws and regulations. If you do not agree to these terms, please do not use our website or services.<\/p><p><strong>3. Privacy<\/strong><br\/>Your use of our website and services is also governed by our Privacy Policy, which can be found <a href=\"https:\/\/www.naturelypure.com\/pages\/privacy-policy\" title=\"https:\/\/www.naturelypure.com\/pages\/privacy-policy\">here.<\/a>. Please review this policy to understand how we collect, use, and protect your information.<\/p><p><strong>4. Use of Services<\/strong><br\/>a. You may use our website and services for lawful purposes only.<br\/>b. You must be of legal age to use our services in your jurisdiction or have parental\/guardian consent.<br\/>c. You agree not to engage in any activity that violates these Terms of Service or applicable laws.<\/p><p><strong>5. Orders and Payments<\/strong><br\/>a. When you place an order, you agree to pay the specified price, including any applicable taxes and shipping fees.<br\/>b. We reserve the right to cancel or refuse orders at our discretion.<br\/>c. Payment information is processed securely. Please refer to our Privacy Policy for details.<\/p><p><strong>6. Shipping<\/strong><br\/>a. Shipping information, including estimated delivery times, can be found on our Shipping page.<br\/>b. We are not responsible for delays or issues caused by third-party shipping carriers.<\/p><p><strong>7. Returns and Refunds<\/strong><br\/>a. Information about returns and refunds can be found on our Returns and Refunds page.<\/p><p><strong>8. Intellectual Property<\/strong><br\/>a. All content on our website is protected by intellectual property laws and is the property of NaturelyPure or its licensors.<\/p><p><strong>9. Termination<\/strong><br\/>a. We reserve the right to terminate or suspend your account and access to our services at our discretion.<\/p><p><strong>10. Contact Information<\/strong><br\/>For questions or concerns regarding these Terms of Service, please contact us at support@naturelypure.com.<\/p>",
         "description_size": "fs-6",
         "btn_text": "",
         "btn_url": "",
         "btn_color": "btn-outline-primary",
-        "btn_size": "",
-        "pt": 10,
-        "pb": 10,
-        "mt": 0,
-        "mb": 0
-      }
-    },
-    "751e8a6f-3175-422f-918b-79bfa3efbba6": {
-      "type": "cards-with-image",
-      "blocks": {
-        "e6fbab57-3cca-47b2-bb1b-e2b18653ae1b": {
-          "type": "item",
-          "settings": {
-            "text_align": "text-start",
-            "shadow": "shadow-sm",
-            "border_color": "",
-            "border_width": 1,
-            "img": "shopify:\/\/shop_images\/collection-1.jpg",
-            "img_orientation": "landscape",
-            "img_crop": "center",
-            "title": "John Doe",
-            "title_size": "h5",
-            "description": "<p>Team Position<\/p>",
-            "description_size": "fs-6",
-            "btn_text": "Learn more",
-            "btn_url": "",
-            "btn_color": "btn-outline-primary",
-            "btn_size": "btn-sm"
-          }
-        },
-        "751a5030-aaaa-44b1-bca1-8f5d9a811a8b": {
-          "type": "item",
-          "settings": {
-            "text_align": "text-start",
-            "shadow": "shadow-sm",
-            "border_color": "",
-            "border_width": 1,
-            "img": "shopify:\/\/shop_images\/collection-6.jpg",
-            "img_orientation": "landscape",
-            "img_crop": "center",
-            "title": "Jane Doe",
-            "title_size": "h5",
-            "description": "<p>Team Position<\/p>",
-            "description_size": "fs-6",
-            "btn_text": "Learn more",
-            "btn_url": "",
-            "btn_color": "btn-outline-primary",
-            "btn_size": "btn-sm"
-          }
-        },
-        "13b37b67-199f-46d5-9083-3e27d855729b": {
-          "type": "item",
-          "settings": {
-            "text_align": "text-start",
-            "shadow": "shadow-sm",
-            "border_color": "",
-            "border_width": 1,
-            "img": "shopify:\/\/shop_images\/collection-4.jpg",
-            "img_orientation": "landscape",
-            "img_crop": "center",
-            "title": "John Doe",
-            "title_size": "h5",
-            "description": "<p>Team Position<\/p>",
-            "description_size": "fs-6",
-            "btn_text": "Learn more",
-            "btn_url": "",
-            "btn_color": "btn-outline-primary",
-            "btn_size": "btn-sm"
-          }
-        },
-        "4eb76491-34b9-433c-b644-3e29b11754cf": {
-          "type": "item",
-          "settings": {
-            "text_align": "text-start",
-            "shadow": "shadow-sm",
-            "border_color": "",
-            "border_width": 1,
-            "img": "shopify:\/\/shop_images\/collection-2.jpg",
-            "img_orientation": "landscape",
-            "img_crop": "center",
-            "title": "Jane Doe",
-            "title_size": "h5",
-            "description": "<p>Team Position<\/p>",
-            "description_size": "fs-6",
-            "btn_text": "Learn more",
-            "btn_url": "",
-            "btn_color": "btn-outline-primary",
-            "btn_size": "btn-sm"
-          }
-        }
-      },
-      "block_order": [
-        "e6fbab57-3cca-47b2-bb1b-e2b18653ae1b",
-        "751a5030-aaaa-44b1-bca1-8f5d9a811a8b",
-        "13b37b67-199f-46d5-9083-3e27d855729b",
-        "4eb76491-34b9-433c-b644-3e29b11754cf"
-      ],
-      "settings": {
-        "bg_color": "bg-light text-dark",
-        "text_align": "text-center",
-        "title": "Our Team",
-        "title_size": "h2",
-        "description": "<p>Add on optional description to this section<\/p>",
-        "description_size": "fs-6",
-        "row_xs": 1,
-        "row_sm": 2,
-        "row_lg": 4,
-        "pt": 10,
-        "pb": 10,
-        "mt": 0,
-        "mb": 0
-      }
-    },
-    "bcc4442b-9440-4589-9f26-b0c513404d8c": {
-      "type": "image-with-text",
-      "settings": {
-        "bg_color": "",
-        "text_align": "text-start",
-        "image": "shopify:\/\/shop_images\/collection-5.jpg",
-        "img_orientation": "landscape",
-        "img_crop": "center",
-        "img_border": "img-thumbnail",
-        "img_align_desktop": "flex-lg-row",
-        "title": "The Best Products!",
-        "title_size": "h2",
-        "subtitle": "Some Optional Subtitle",
-        "subtitle_size": "fs-6",
-        "description": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "description_size": "fs-6",
-        "btn_text": "Shop now",
-        "btn_url": "shopify:\/\/collections\/all",
-        "btn_color": "btn-primary",
         "btn_size": "",
         "pt": 10,
         "pb": 10,
@@ -233,8 +64,6 @@
   "order": [
     "165268949817e427ae",
     "1652689700430c7f0b",
-    "751e8a6f-3175-422f-918b-79bfa3efbba6",
-    "bcc4442b-9440-4589-9f26-b0c513404d8c",
     "d751c1ef-ae9a-4d2f-b415-f968dcca9f73",
     "9ef7cc85-571e-4685-b0f4-c655656a9c8c"
   ]
