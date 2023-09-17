@@ -17,9 +17,9 @@
         "bg_color": "bg-white text-dark",
         "max_width": "768",
         "text_align": "text-start",
-        "title": "Terms of Service",
+        "title": "Privacy Policy",
         "title_size": "h1",
-        "description": "<p>Naturely Pure Terms of Service<\/p><p><strong>1. Introduction<\/strong><br\/>Welcome to <strong>NaturelyPure<\/strong>! These Terms of Service govern your use of our website and services. Please read them carefully.<\/p><p><strong>2. User Agreement<\/strong><br\/>By accessing and using our website or services, you agree to abide by these Terms of Service and all applicable laws and regulations. If you do not agree to these terms, please do not use our website or services.<\/p><p><strong>3. Privacy<\/strong><br\/>Your use of our website and services is also governed by our Privacy Policy, which can be found <a href=\"https:\/\/www.naturelypure.com\/pages\/privacy-policy\" title=\"https:\/\/www.naturelypure.com\/pages\/privacy-policy\">here.<\/a>. Please review this policy to understand how we collect, use, and protect your information.<\/p><p><strong>4. Use of Services<\/strong><br\/>a. You may use our website and services for lawful purposes only.<br\/>b. You must be of legal age to use our services in your jurisdiction or have parental\/guardian consent.<br\/>c. You agree not to engage in any activity that violates these Terms of Service or applicable laws.<\/p><p><strong>5. Orders and Payments<\/strong><br\/>a. When you place an order, you agree to pay the specified price, including any applicable taxes and shipping fees.<br\/>b. We reserve the right to cancel or refuse orders at our discretion.<br\/>c. Payment information is processed securely. Please refer to our Privacy Policy for details.<\/p><p><strong>6. Shipping<\/strong><br\/>a. Shipping information, including estimated delivery times, can be found on our Shipping page.<br\/>b. We are not responsible for delays or issues caused by third-party shipping carriers.<\/p><p><strong>7. Returns and Refunds<\/strong><br\/>a. Information about returns and refunds can be found on our Returns and Refunds page.<\/p><p><strong>8. Intellectual Property<\/strong><br\/>a. All content on our website is protected by intellectual property laws and is the property of NaturelyPure or its licensors.<\/p><p><strong>9. Termination<\/strong><br\/>a. We reserve the right to terminate or suspend your account and access to our services at our discretion.<\/p><p><strong>10. Contact Information<\/strong><br\/>For questions or concerns regarding these Terms of Service, please contact us at support@naturelypure.com.<\/p>",
+        "description": "<p>NaturelyPure Privacy Policy<\/p><p><strong>Cookies:<\/strong><br\/>a. We use cookies and similar tracking technologies to improve your browsing experience on our website.<br\/>b. You can adjust your browser settings to refuse cookies or to notify you when cookies are being sent.<br\/><\/p><p><strong>Analytics:<\/strong><br\/>a. We collect data using analytics tools to understand how users interact with our website and to improve our services.<br\/>b. The information collected includes your IP address, browser type, pages visited, and other usage data.<\/p><p><strong>Data Security:<\/strong><br\/>a. We prioritize the security of your data and employ industry-standard measures to protect it from unauthorized access or disclosure.<\/p><p><strong>Data Retention:<\/strong><br\/>a. We retain your personal data for as long as necessary to fulfill the purposes outlined in this policy or as required by law.<\/p><p><strong>User Rights:<\/strong><br\/>a. You have the right to access, correct, or delete your personal data. To exercise these rights, please contact us at support@naturelypure.com.<br\/>b. You also have the right to opt-out of marketing communications at any time by following the instructions in our marketing emails or contacting us.<\/p><p><strong>Third-Party Links:<\/strong><br\/>a. Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of these websites.<\/p><p><strong>Contact Information:<\/strong><br\/>For privacy-related inquiries or to exercise your rights, please contact us at support@naturelypure.com.<\/p>",
         "description_size": "fs-6",
         "btn_text": "",
         "btn_url": "",
@@ -39,32 +39,11 @@
         "mt": 0,
         "mb": 0
       }
-    },
-    "9ef7cc85-571e-4685-b0f4-c655656a9c8c": {
-      "type": "richtext",
-      "settings": {
-        "bg_color": "",
-        "max_width": "960",
-        "text_align": "text-center",
-        "title": "Want To Say Hi?",
-        "title_size": "h3",
-        "description": "<p>Add on optional description to this section<\/p>",
-        "description_size": "fs-6",
-        "btn_text": "Drop us an email",
-        "btn_url": "shopify:\/\/pages\/contact",
-        "btn_color": "btn-primary",
-        "btn_size": "",
-        "pt": 10,
-        "pb": 10,
-        "mt": 0,
-        "mb": 0
-      }
     }
   },
   "order": [
     "165268949817e427ae",
     "1652689700430c7f0b",
-    "d751c1ef-ae9a-4d2f-b415-f968dcca9f73",
-    "9ef7cc85-571e-4685-b0f4-c655656a9c8c"
+    "d751c1ef-ae9a-4d2f-b415-f968dcca9f73"
   ]
 }
