@@ -57,6 +57,21 @@
       "settings": {
       }
     },
+    "16952368513a5e14fe": {
+      "type": "apps",
+      "blocks": {
+        "150101e5-b784-4444-b412-e18dcf1757f0": {
+          "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/product-widget\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "150101e5-b784-4444-b412-e18dcf1757f0"
+      ],
+      "settings": {
+      }
+    },
     "5ca5d2db-2cba-4423-b260-a6a8749b20a8": {
       "type": "recommended-products",
       "settings": {
@@ -88,6 +103,7 @@
     "template-product",
     "a048e36f-1b13-4ad9-9fdd-e392f0e9489c",
     "16952250000e023f28",
+    "16952368513a5e14fe",
     "5ca5d2db-2cba-4423-b260-a6a8749b20a8"
   ]
 }
