@@ -13,13 +13,21 @@
           "type": "richtext",
           "settings": {
             "title": "Shipping & Returns",
-            "description": "<p>Feel free to create additional blocks like this for <strong>Shipping, Payments, etc <\/strong>through the Shopify Theme editor. Also, you may easily adjust their order by dragging and dropping.<\/p>"
+            "description": "<p>We Offer FREE SHIPPING To Residents of the following countries:<br\/>Canada, United States, United Kingdom, Australia, Ireland, New Zealand, Sweden, Switzerland, United Arab Emirates, France, Germany, Austria, Belgium, Poland, Portugal, Spain, Italy, and Norway.<\/p>"
+          }
+        },
+        "71c993a5-7816-46b2-8594-3399224c8da3": {
+          "type": "richtext",
+          "settings": {
+            "title": "Estimated Delivery Times",
+            "description": "<p>Our delivery time is 10 - 20 days for the following countries: Canada, United States, United Kingdom, and New Zealand. <\/p><p>If you live in another country, please contact us at support@naturelypure.com for delivery times and we will get back to you as soon as possible.<\/p>"
           }
         }
       },
       "block_order": [
         "58913963-afac-40f1-aaef-9a8b2084dc99",
-        "9bcd0fdf-578a-47f6-bc90-d14ef3dbeaa5"
+        "9bcd0fdf-578a-47f6-bc90-d14ef3dbeaa5",
+        "71c993a5-7816-46b2-8594-3399224c8da3"
       ],
       "settings": {
         "title_size": "h2",
