@@ -54,16 +54,6 @@
     },
     "16952250000e023f28": {
       "type": "apps",
-      "blocks": {
-        "edd6ed53-0fc9-46b1-a4ca-732c77a404dc": {
-          "type": "shopify:\/\/apps\/monimo-photo-reviews-ugc\/blocks\/happy-customer-page\/88bcf055-6ae0-4d9e-8274-50a41583d7aa",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "edd6ed53-0fc9-46b1-a4ca-732c77a404dc"
-      ],
       "settings": {
       }
     },
