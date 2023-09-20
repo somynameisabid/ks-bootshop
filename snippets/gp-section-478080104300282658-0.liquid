@@ -155,9 +155,9 @@
     {%- assign variant = product.selected_or_first_available_variant -%}
     {% assign shouldHidden = '' %}
     {% if featureMedia.media_type == 'model' %}
-       
+      
     <model-viewer
-      class="w-full h-full model-viewer z-[99]"
+      class="w-full h-full model-viewer z-[90]"
       width="100%" height="100%"
       
       
@@ -168,15 +168,16 @@
       camera-controls="true"
       poster="{{featureMedia.preview_image.src | product_img_url: '1024x1024'}}"
       data-js-focus-visible=""
-      data-shopify-feature="true"
-      ar-status="not-presenting">
+      data-shopify-feature="1.12"
+      ar-status="not-presenting"
+      style="">
     </model-viewer>
   
     {% endif %}
     {% if featureMedia.media_type == 'video' %}
-       
+      
     <iframe
-     width="100%" height="100%"
+      width="100%" height="100%"
       class="feature-video w-full h-full relative"
       src="{{mediaSourceVideo}}"
       controls="true"
@@ -184,14 +185,16 @@
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       frameborder="0"
       autoplay="true"
-      alt="{{mediaVideoAlt}}">
+      alt="{{mediaVideoAlt}}"
+      style=""
+    >
     </iframe>
   
     {% endif %}
     {% if featureMedia.media_type == 'external_video' %}
-       
+      
     <iframe
-     width="100%" height="100%"
+      width="100%" height="100%"
       class="feature-video w-full h-full relative"
       src="{{mediaSourceVideo}}"
       controls="true"
@@ -199,7 +202,9 @@
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       frameborder="0"
       autoplay="true"
-      alt="{{mediaVideoAlt}}">
+      alt="{{mediaVideoAlt}}"
+      style=""
+    >
     </iframe>
   
     {% endif %}
@@ -279,7 +284,7 @@
       <div class="hidden aspect-square w-[12px] rounded-full shadow-md"></div>
       <div
         
-        class="relative px-1 tablet:px-0 mobile:px-0 gp-carousel-wrapper mobile:block tablet:block block"
+        class="relative tablet:px-0 mobile:px-0 gp-carousel-wrapper mobile:block tablet:block block"
         style="--h:auto;--h-tablet:auto;--h-mobile:auto;--w:100%;--w-tablet:100%;--w-mobile:100%;visibility:hidden"
       >
         <div
@@ -317,7 +322,7 @@
       media-source-url="{{media.sources.first.url}}" 
       media-last-source-url="{{mediaSourceUrl}}"
       external-id="{{media.external_id}}"
-       grid-index="{{forloop.index}}"
+      grid-index="{{forloop.index}}"
       data-outline="active"
       id="{{imageID}}"
       style="outline-color:var(--g-c-brand, brand)"
@@ -391,7 +396,7 @@
       media-source-url="{{media.sources.first.url}}" 
       media-last-source-url="{{mediaSourceUrl}}"
       external-id="{{media.external_id}}"
-       grid-index="{{forloop.index}}"
+      grid-index="{{forloop.index}}"
       data-outline="deactive"
       id="{{imageID}}"
       style="outline-color:var(--g-c-brand, brand)"
@@ -455,7 +460,7 @@
         </div>
         
     <button
-      class="gp-carousel-action-back g3_3LfdJ8O-{{product.id}} absolute h-6 w-6 cursor-pointer text-gray-500 disabled:cursor-default disabled:text-gray-300 data-[hidden=true]:!hidden tablet:inline mobile:inline left-4 tablet:left-4 tablet:translate-x-0 tablet:pl-1 mobile:left-4 mobile:translate-x-0 mobile:pl-1 rotate-180 tablet:rotate-180 mobile:rotate-180 top-1/2 -translate-y-1/2 tablet:top-1/2 tablet:-translate-y-1/2 mobile:top-1/2 mobile:-translate-y-1/2"
+      class="gp-carousel-action-back g3_3LfdJ8O-{{product.id}} gp-carousel-arrow absolute h-6 w-6 cursor-pointer text-gray-500 disabled:cursor-default disabled:text-gray-300 data-[hidden=true]:!hidden tablet:!inline mobile:!inline left-4 tablet:left-4 tablet:translate-x-0 tablet:pl-1 mobile:left-4 mobile:translate-x-0 mobile:pl-1 rotate-180 tablet:rotate-180 mobile:rotate-180 top-1/2 -translate-y-1/2 tablet:top-1/2 tablet:-translate-y-1/2 mobile:top-1/2 mobile:-translate-y-1/2"
       
     >
       <span class="inline-flex h-6 w-6 items-center justify-center">
@@ -468,7 +473,7 @@
 
         
     <button
-      class="gp-carousel-action-next g3_3LfdJ8O-{{product.id}} absolute h-6 w-6 cursor-pointer text-gray-500 disabled:cursor-default disabled:text-gray-300 data-[hidden=true]:!hidden tablet:inline mobile:inline right-4 tablet:right-4 tablet:translate-x-0 tablet:pl-1 mobile:right-4 mobile:translate-x-0 mobile:pl-1 rotate-0 tablet:rotate-0 mobile:rotate-0 bottom-1/2 translate-y-1/2 tablet:bottom-1/2 tablet:translate-y-1/2 mobile:bottom-1/2 mobile:translate-y-1/2"
+      class="gp-carousel-action-next g3_3LfdJ8O-{{product.id}} gp-carousel-arrow absolute h-6 w-6 cursor-pointer text-gray-500 disabled:cursor-default disabled:text-gray-300 data-[hidden=true]:!hidden tablet:!inline mobile:!inline right-4 tablet:right-4 tablet:translate-x-0 tablet:pl-1 mobile:right-4 mobile:translate-x-0 mobile:pl-1 rotate-0 tablet:rotate-0 mobile:rotate-0 bottom-1/2 translate-y-1/2 tablet:bottom-1/2 tablet:translate-y-1/2 mobile:bottom-1/2 mobile:translate-y-1/2"
       
     >
       <span class="inline-flex h-6 w-6 items-center justify-center">
@@ -492,16 +497,16 @@
   > 
     {%- if product.media.size > 1 -%}
       {%- for media in product.media -%}
-       {% if media.media_type == 'image' %}
-        {%- for image in product.images -%}
-          {% if image.src == media.src %}
-            {% assign imageID = image.id %}
-            {% break %}
-          {% endif%}
-        {% endfor %}
-      {% else %}
-        {% assign imageID = '' %}
-      {% endif %}
+        {% if media.media_type == 'image' %}
+          {%- for image in product.images -%}
+            {% if image.src == media.src %}
+              {% assign imageID = image.id %}
+              {% break %}
+            {% endif%}
+          {% endfor %}
+        {% else %}
+          {% assign imageID = '' %}
+        {% endif %}
         {%- if media.id == product.featured_media.id -%}        
             
     {% if media.media_type == 'video' %}
