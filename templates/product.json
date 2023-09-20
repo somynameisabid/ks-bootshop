@@ -52,6 +52,21 @@
         "mb": 10
       }
     },
+    "16952250000e023f28": {
+      "type": "apps",
+      "blocks": {
+        "edd6ed53-0fc9-46b1-a4ca-732c77a404dc": {
+          "type": "shopify:\/\/apps\/monimo-photo-reviews-ugc\/blocks\/happy-customer-page\/88bcf055-6ae0-4d9e-8274-50a41583d7aa",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "edd6ed53-0fc9-46b1-a4ca-732c77a404dc"
+      ],
+      "settings": {
+      }
+    },
     "5ca5d2db-2cba-4423-b260-a6a8749b20a8": {
       "type": "recommended-products",
       "settings": {
@@ -82,6 +97,7 @@
   "order": [
     "template-product",
     "a048e36f-1b13-4ad9-9fdd-e392f0e9489c",
+    "16952250000e023f28",
     "5ca5d2db-2cba-4423-b260-a6a8749b20a8"
   ]
 }
