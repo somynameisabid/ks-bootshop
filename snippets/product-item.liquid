@@ -36,6 +36,7 @@
         <h3 class="product-item-title mb-2 {{ section.settings.product_title_size }}">
             {{ product.title }}
         </h3>
+        <div class='opinew-stars-plugin-product-list'>{% render 'opinew_review_stars_lists' product:product %}</div>
     </a>
     <p class="product-item-price mb-0">
         {% if product.compare_at_price > product.price %}
