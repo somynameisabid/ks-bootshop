@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
 <head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WRVLQQ8H');</script>
+<!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="{{ settings.color_primary }}">
@@ -65,9 +72,23 @@
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
 
 {% render 'gp-head' %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11343822327">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11343822327');
+</script>
 </head>
 
 <body class="{{ request.page_type | prepend: 'page-type-' }}">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRVLQQ8H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <a class="visually-hidden-focusable" href="#main">
         {{ 'general.accessibility.skip_content' | t }}
     </a>
@@ -89,4 +110,4 @@
 
 </body>
 </html>
-    
+    <div id="monimo_social_proof2"></div> <div id="monimo_social_proof"  class=" shopbooster-temp-{{ template.name }}"></div><script src="https://monimo.app/ali/reviews_js.js"  ></script><script src="https://monimo.app/ali/theme_js.js"></script>  
