@@ -1,7 +1,36 @@
 
   
+      <style>
+        @font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wWA.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+      </style>
+    
   <style>
-    .gps-478601368475534133 .g-paragraph-2{font-family:var(--g-p2-ff);font-size:var(--g-p2-size);font-style:var(--g-p2-fs);font-weight:var(--g-p2-weight);letter-spacing:var(--g-p2-ls);line-height:var(--g-p2-lh)}.gps-478601368475534133 .relative{position:relative}.gps-478601368475534133 .mx-auto{margin-left:auto;margin-right:auto}.gps-478601368475534133 .mb-0{margin-bottom:0}.gps-478601368475534133 .flex{display:flex}.gps-478601368475534133 .inline-flex{display:inline-flex}.gps-478601368475534133 .grid{display:grid}.gps-478601368475534133 .h-6{height:24px}.gps-478601368475534133 .w-6{width:24px}.gps-478601368475534133 .w-full{width:100%}.gps-478601368475534133 .max-w-full{max-width:100%}.gps-478601368475534133 .flex-col{flex-direction:column}.gps-478601368475534133 .flex-wrap{flex-wrap:wrap}.gps-478601368475534133 .items-center{align-items:center}.gps-478601368475534133 .justify-center{justify-content:center}.gps-478601368475534133 .overflow-hidden{overflow:hidden}.gps-478601368475534133 .leading-\[0\]{line-height:0}.gps-478601368475534133 .text-g-bg-3{color:var(--g-c-bg-3)}.gps-478601368475534133 .transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-478601368475534133 .duration-200{transition-duration:.2s}.gps-478601368475534133 .ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-478601368475534133 .\[\&\>svg\]\:h-auto>svg{height:auto}.gps-478601368475534133 .\[\&\>svg\]\:w-full>svg{width:100%}.gps-478601368475534133 .\[\&_\*\]\:max-w-full *{max-width:100%}
+    .gps-478601368475534133 .relative{position:relative}.gps-478601368475534133 .mx-auto{margin-left:auto;margin-right:auto}.gps-478601368475534133 .mb-0{margin-bottom:0}.gps-478601368475534133 .flex{display:flex}.gps-478601368475534133 .inline-flex{display:inline-flex}.gps-478601368475534133 .grid{display:grid}.gps-478601368475534133 .h-6{height:24px}.gps-478601368475534133 .w-6{width:24px}.gps-478601368475534133 .w-full{width:100%}.gps-478601368475534133 .max-w-full{max-width:100%}.gps-478601368475534133 .flex-col{flex-direction:column}.gps-478601368475534133 .flex-wrap{flex-wrap:wrap}.gps-478601368475534133 .items-center{align-items:center}.gps-478601368475534133 .justify-center{justify-content:center}.gps-478601368475534133 .overflow-hidden{overflow:hidden}.gps-478601368475534133 .leading-\[0\]{line-height:0}.gps-478601368475534133 .text-g-bg-3{color:var(--g-c-bg-3)}.gps-478601368475534133 .transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-478601368475534133 .duration-200{transition-duration:.2s}.gps-478601368475534133 .ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-478601368475534133 .\[\&\>svg\]\:h-auto>svg{height:auto}.gps-478601368475534133 .\[\&\>svg\]\:w-full>svg{width:100%}.gps-478601368475534133 .\[\&_\*\]\:max-w-full *{max-width:100%}
   </style>
   
       
@@ -29,8 +58,8 @@
       >
       <div
         data-gp-text
-        class="text-g-bg-3 g-paragraph-2 gp-text"
-        style="--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-bg-3, bg-3);word-break:break-word"
+        class="text-g-bg-3 gp-text"
+        style="--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:14px;--size-mobile:14px;word-break:break-word"
       >
       <p>Easy Returns</p>
       </div>
@@ -203,10 +232,10 @@
       >
       <div
         data-gp-text
-        class="text-g-bg-3 g-paragraph-2 gp-text"
-        style="--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-bg-3, bg-3);word-break:break-word"
+        class="text-g-bg-3 gp-text"
+        style="--ts:none;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:14px;--size-mobile:14px;word-break:break-word"
       >
-      <p>18+ Clients Satisfied</p>
+      <p>18+ Customers Satisfied</p>
       </div>
     </div>
     </div>
@@ -226,8 +255,8 @@
       >
       <div
         data-gp-text
-        class="text-g-bg-3 g-paragraph-2 gp-text"
-        style="--ts:none;--ta:left;--ta-mobile:right;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-bg-3, bg-3);word-break:break-word"
+        class="text-g-bg-3 gp-text"
+        style="--ts:none;--ta:left;--ta-mobile:right;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:14px;--size-mobile:14px;word-break:break-word"
       >
       <p>Free shipping</p>
       </div>
