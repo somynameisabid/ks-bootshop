@@ -1,11 +1,6 @@
 {
   "layout": "theme.gempages.footer",
   "sections": {
-    "gp_section_479642485476295477": {
-      "type": "gp-section-479642485476295477",
-      "settings": {
-      }
-    },
     "gp_section_478080104853930786": {
       "type": "gp-section-478080104853930786",
       "settings": {
@@ -58,7 +53,6 @@
     }
   },
   "order": [
-    "gp_section_479642485476295477",
     "gp_section_478080104853930786",
     "gp_section_479620333142279202",
     "gp_section_478625901546832930",
