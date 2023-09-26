@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "template-product": {
+      "type": "template-product",
+      "blocks": {
+        "58913963-afac-40f1-aaef-9a8b2084dc99": {
+          "type": "product_description",
+          "settings": {
+            "title": "Details"
+          }
+        },
+        "9bcd0fdf-578a-47f6-bc90-d14ef3dbeaa5": {
+          "type": "richtext",
+          "settings": {
+            "title": "Shipping & Returns",
+            "description": "<p>We Offer FREE SHIPPING To Residents of the following countries:<br\/>Canada, United States, United Kingdom, Australia, Ireland, New Zealand, Sweden, Switzerland, United Arab Emirates, France, Germany, Austria, Belgium, Poland, Portugal, Spain, Italy, and Norway.<\/p>"
+          }
+        },
+        "71c993a5-7816-46b2-8594-3399224c8da3": {
+          "type": "richtext",
+          "settings": {
+            "title": "Estimated Delivery Times",
+            "description": "<p>Our delivery time is 10 - 20 days for the following countries: Canada, United States, United Kingdom, and New Zealand. <\/p><p>If you live in another country, please contact us at support@naturelypure.com for delivery times and we will get back to you as soon as possible.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "58913963-afac-40f1-aaef-9a8b2084dc99",
+        "9bcd0fdf-578a-47f6-bc90-d14ef3dbeaa5",
+        "71c993a5-7816-46b2-8594-3399224c8da3"
+      ],
+      "settings": {
+        "title_size": "h2",
+        "show_vendor": true,
+        "show_share_btn": true,
+        "gallery_img_orientation": "square",
+        "gallery_img_border": "img-thumbnail",
+        "form_light_bg": true,
+        "form_show_buy_btn": true,
+        "pt": 10,
+        "pb": 0,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "a048e36f-1b13-4ad9-9fdd-e392f0e9489c": {
+      "type": "separator",
+      "settings": {
+        "full_width": false,
+        "opacity": 0.1,
+        "mt": 10,
+        "mb": 10
+      }
+    },
+    "16952250000e023f28": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "16952368513a5e14fe": {
+      "type": "apps",
+      "blocks": {
+        "150101e5-b784-4444-b412-e18dcf1757f0": {
+          "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/product-widget\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "150101e5-b784-4444-b412-e18dcf1757f0"
+      ],
+      "settings": {
+      }
+    },
+    "5ca5d2db-2cba-4423-b260-a6a8749b20a8": {
+      "type": "recommended-products",
+      "settings": {
+        "bg_color": "",
+        "text_align": "text-center",
+        "limit": 8,
+        "title": "Recommended Products",
+        "title_size": "h2",
+        "description": "<p>Add on optional description to this section<\/p>",
+        "description_size": "fs-6",
+        "product_img_orientation": "square",
+        "product_img_border": "img-thumbnail",
+        "product_title_size": "h6",
+        "mobile_scroll": true,
+        "breakpoint_xs": 1,
+        "breakpoint_sm": 2,
+        "breakpoint_md": 2,
+        "breakpoint_lg": 3,
+        "breakpoint_xl": 4,
+        "breakpoint_xxl": 4,
+        "pt": 0,
+        "pb": 11,
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "pf-e64e9683": {
+      "type": "pf-e64e9683",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "template-product",
+    "a048e36f-1b13-4ad9-9fdd-e392f0e9489c",
+    "16952250000e023f28",
+    "16952368513a5e14fe",
+    "5ca5d2db-2cba-4423-b260-a6a8749b20a8",
+    "pf-e64e9683"
+  ]
+}
