@@ -97,6 +97,16 @@
         "mt": 0,
         "mb": 0
       }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "1695821288d856980c": {
+      "type": "apps",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -104,6 +114,8 @@
     "a048e36f-1b13-4ad9-9fdd-e392f0e9489c",
     "16952250000e023f28",
     "16952368513a5e14fe",
-    "5ca5d2db-2cba-4423-b260-a6a8749b20a8"
+    "5ca5d2db-2cba-4423-b260-a6a8749b20a8",
+    "loox-product-reviews-app-section",
+    "1695821288d856980c"
   ]
 }

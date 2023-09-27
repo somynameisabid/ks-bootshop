@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
-<head>
+<head>{% render 'pagefly-head' %}
 	<!-- Added by AVADA SEO Suite -->
 	{% include 'avada-seo' %}
 	<!-- /Added by AVADA SEO Suite -->
@@ -85,6 +85,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'AW-11343822327');
 </script>
+
+	{{ shop.metafields.loox["global_html_head"] }}
 </head>
 
 <body class="{{ request.page_type | prepend: 'page-type-' }}">
@@ -112,6 +114,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 {{ 'crucial-commerce-page-speed.js' | asset_url | script_tag }}
+
+	{{ shop.metafields.loox["global_html_body"] }}
 </body>
 </html>
     <div id="monimo_social_proof2"></div> <div id="monimo_social_proof"  class=" shopbooster-temp-{{ template.name }}"></div><script src="https://monimo.app/ali/reviews_js.js"  ></script><script src="https://monimo.app/ali/theme_js.js"></script>  

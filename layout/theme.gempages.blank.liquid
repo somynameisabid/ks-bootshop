@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
-<head>
+<head>{% render 'pagefly-head' %}
 	<!-- Added by AVADA SEO Suite -->
 	{% include 'avada-seo' %}
 	<!-- /Added by AVADA SEO Suite -->
@@ -85,6 +85,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'AW-11343822327');
 </script>
+
+	{{ shop.metafields.loox["global_html_head"] }}
 </head>
 
 <body class="{{ request.page_type | prepend: 'page-type-' }}"><main id="main">
