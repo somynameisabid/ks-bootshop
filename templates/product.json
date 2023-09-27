@@ -97,6 +97,25 @@
         "mt": 0,
         "mb": 0
       }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -104,6 +123,7 @@
     "a048e36f-1b13-4ad9-9fdd-e392f0e9489c",
     "16952250000e023f28",
     "16952368513a5e14fe",
-    "5ca5d2db-2cba-4423-b260-a6a8749b20a8"
+    "5ca5d2db-2cba-4423-b260-a6a8749b20a8",
+    "loox-product-reviews-app-section"
   ]
 }
