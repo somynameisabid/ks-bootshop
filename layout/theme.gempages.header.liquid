@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 	{{ shop.metafields.loox["global_html_head"] }}
-</head>
+{% render 'aio-script' %} </head>
 
 <body class="{{ request.page_type | prepend: 'page-type-' }}">
 <!-- Google Tag Manager (noscript) -->
