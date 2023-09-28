@@ -45,8 +45,8 @@
           "menu_mobile": "",
           "utilities_menu": "",
           "offcanvas_menu_show_social_icons": true,
-          "pt": 6,
-          "pb": 6
+          "pt": 4,
+          "pb": 4
         }
       },
       "footer": {
@@ -136,26 +136,8 @@
 
     ],
     "blocks": {
-      "9790993569898449839": {
-        "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/global\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "16278478101612877664": {
         "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "4275615285897611771": {
-        "type": "shopify:\/\/apps\/fera\/blocks\/embed\/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "1143683040400472741": {
-        "type": "shopify:\/\/apps\/trustoo-product-ali-reviews\/blocks\/trustoo-review-switch\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
         "disabled": false,
         "settings": {
         }
