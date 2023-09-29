@@ -101,6 +101,9 @@
       },
       "announcement-bar": {
         "type": "announcement-bar",
+        "custom_css": [
+
+        ],
         "settings": {
           "announcement": "<p>Use Code \"Charcoal\" at Checkout for 10% dISCOUNT!<\/p>",
           "show": true,
@@ -133,7 +136,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-
+      ".announcement-bar {position: absolute; top: 0; left: 0; width: 100%; z-index: 100; \/* Adjust the z-index as needed *\/}",
+      ".navbar {padding-top: 60px;}"
     ]
   }
 }
