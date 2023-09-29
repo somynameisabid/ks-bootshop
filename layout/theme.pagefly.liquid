@@ -89,7 +89,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'AW-11343822327');
 </script>
-</head>
+
+	{{ shop.metafields.loox["global_html_head"] }}
+{% render 'aio-script' %} </head>
 
 <body class="{{ request.page_type | prepend: 'page-type-' }}"><div class="pagefly-container">{{ content_for_layout }}</div></body>
 </html>
