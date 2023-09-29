@@ -136,8 +136,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".announcement-bar {position: absolute; top: 0; left: 0; width: 100%; z-index: 100; \/* Adjust the z-index as needed *\/}",
-      ".navbar {padding-top: 60px;}"
+      ".announcement-bar {position: relative;}"
     ]
   }
 }
