@@ -106,7 +106,7 @@
         ],
         "settings": {
           "announcement": "<p>Use Code \"Charcoal\" at Checkout for 10% dISCOUNT!<\/p>",
-          "show": true,
+          "show": false,
           "homepage": false,
           "bg_color": "bg-dark text-white",
           "max_width": "6000",
