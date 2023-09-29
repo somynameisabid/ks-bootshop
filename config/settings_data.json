@@ -106,7 +106,7 @@
           "show": true,
           "homepage": false,
           "bg_color": "bg-dark text-white",
-          "max_width": "600",
+          "max_width": "6000",
           "font_size": "small",
           "text_transform": "text-capitalize",
           "pt": 3,
