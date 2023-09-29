@@ -104,7 +104,7 @@
         "settings": {
           "announcement": "<p>Use Code \"Charcoal\" at Checkout for 10% dISCOUNT!<\/p>",
           "show": true,
-          "homepage": true,
+          "homepage": false,
           "bg_color": "bg-dark text-white",
           "max_width": "600",
           "font_size": "small",
@@ -133,7 +133,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".navbar {position: fixed; top: 0; left: 0; width: 100%; }"
+
     ]
   }
 }
