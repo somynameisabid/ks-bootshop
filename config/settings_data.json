@@ -133,7 +133,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".navbar {position: sticky;}"
+      ".navbar {position: fixed; top: 0; left: 0; width: 100%; }"
     ]
   }
 }
